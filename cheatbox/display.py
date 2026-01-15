@@ -6,13 +6,12 @@ from rich import box
 
 class Display:
     def __init__(self) -> None:
-        self.command_width = 8
-        self.outer_width = 120
+        self.command_width: int = 25
+        self.outer_width: int = 130
 
         # style scheme
-        self.border_style = "yellow"
+        self.primary_style: str = "blue"
         self.header_style = "dim white"
-        self.command_style = "yellow"
         self.description_style = "white"
 
     def get_height(self, category_name, commands):
@@ -23,7 +22,7 @@ class Display:
     def box(self, category, commands, extra_padding=0):
         """Panel for each subdomain"""
         table = Table(show_header=True, header_style=f"bold {self.header_style}", box=None, expand=True)
-        table.add_column(header="Command", style=self.command_style, width=self.command_width, justify='right')
+        table.add_column(header="Command", style=self.primary_style, width=self.command_width, justify='right')
         table.add_column(header="Description",style=self.description_style)
 
         for item in commands:
@@ -35,9 +34,9 @@ class Display:
 
         return Panel(
             table,
-            title=f"[{self.border_style}]{category}[/{self.border_style}]",
+            title=f"[{self.primary_style}]{category}[/{self.primary_style}]",
             title_align="left",
-            border_style=self.border_style,
+            border_style=self.primary_style,
         )
 
     def get_ascii_panel(self, json_data, key):
@@ -49,9 +48,17 @@ class Display:
 
     def display_bento(self, json_data):
         """Panel of the panels"""
+        # Get the preconfigured style for domain
+        if "STYLE" in json_data:
+            self.command_width = int(json_data["STYLE"]["command_width"])
+            self.outer_width = int(json_data["STYLE"]["outer_width"])
+            self.primary_style = json_data["STYLE"]["primary_color"]
+            print(self.command_width, self.outer_width, self.primary_style)
+            del json_data["STYLE"]
+            
         console = Console(width=self.outer_width)
 
-
+        # Get the ASCII art for header
         header_grid = Table.grid()
         header_grid.add_column(ratio=1, justify='left') # Column for Logo
         header_grid.add_column(ratio=2) # Column for Title
@@ -59,9 +66,9 @@ class Display:
         logo_panel = self.get_ascii_panel(json_data, "LOGO")
         title_panel = self.get_ascii_panel(json_data, "TITLE")
 
-        title_panel.subtitle_align = 'left'
-        title_panel.subtitle = "CheatBox"
+        title_panel.subtitle = "CheatBox "
 
+        # Display the Logo and title
         if logo_panel or title_panel:
             header_grid.add_row(logo_panel, title_panel)
             console.print(header_grid)
