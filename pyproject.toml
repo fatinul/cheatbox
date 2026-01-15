@@ -1,0 +1,41 @@
+[project]
+name = "cheatbox"
+version = "0.1.0"
+description = "cheatsheet in bentobox"
+readme = "README.md"
+authors = [
+    { name = "Fatinul", email = "fatinul.dev@gmail.com" }
+]
+maintainers = [
+    { name = "Fatinul", email = "fatinul.dev@gmail.com" }
+]
+license = { text = "GPL-3.0-or-later" }
+requires-python = ">=3.12"
+keywords = ["commands", "cheatsheet", "devops"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Terminals",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3.12",
+    "Environment :: Console",
+]
+dependencies = [
+    "pick>=2.4.0",
+    "rich>=14.2.0",
+    "typer>=0.21.1",
+]
+[project.urls]
+Homepage = "https://github.com/fatinul/cheatbox"
+Repository = "https://github.com/fatinul/cheatbox"
+Changelog = "https://github.com/fatinul/cheatbox/releases"
+
+[project.scripts]
+cheatbox = "cheatbox.main:app"
+
+[tool.uv]
+package = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
