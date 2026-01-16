@@ -24,7 +24,7 @@
   ],
   "STYLE": {
     "command_width": 25,
-    "outer_width": 130,
+    "outer_width": 150,
     "primary_color": "blue"
   },
   "Image Management": [
@@ -33,7 +33,7 @@
       "description": "List all Docker images"
     },
     {
-      "command": "docker pull <image>",
+      "command": "docker pull <img>",
       "description": "Download an image from Docker Hub"
     },
     {
@@ -41,15 +41,15 @@
       "description": "Build an image from a Dockerfile"
     },
     {
-      "command": "docker rmi <image>",
+      "command": "docker rmi <img>",
       "description": "Remove an image"
     },
     {
-      "command": "docker inspect <image>",
+      "command": "docker inspect <img>",
       "description": "Displays detailed information about an image"
     },
     {
-      "command": "docker history <image>",
+      "command": "docker history <img>",
       "description": "Show the history of an image"
     }
   ],
@@ -99,43 +99,43 @@
       "description": "List all containers, including stopped ones"
     },
     {
-      "command": "docker run <image>",
+      "command": "docker run <img>",
       "description": "Start a new container from an image"
     },
     {
-      "command": "docker run -d <image>",
+      "command": "docker run -d <img>",
       "description": "Start a new container in detached mode"
     },
     {
-      "command": "docker run -it <image> /bin/bash",
+      "command": "docker run -it <img> /bin/bash",
       "description": "Start a new container with an interactive terminal"
     },
     {
-      "command": "docker exec -it <container> /bin/bash",
+      "command": "docker exec -it <ctn> /bin/bash",
       "description": "Run a command in a running container"
     },
     {
-      "command": "docker stop <container>",
+      "command": "docker stop <ctn>",
       "description": "Stop a running container"
     },
     {
-      "command": "docker start <container>",
+      "command": "docker start <ctn>",
       "description": "Start a stopped container"
     },
     {
-      "command": "docker restart <container>",
+      "command": "docker restart <ctn>",
       "description": "Restart a container"
     },
     {
-      "command": "docker rm <container>",
+      "command": "docker rm <ctn>",
       "description": "Remove a container"
     },
     {
-      "command": "docker logs <container>",
+      "command": "docker logs <ctn>",
       "description": "View the logs of a container"
     },
     {
-      "command": "docker inspect <container>",
+      "command": "docker inspect <ctn>",
       "description": "Displays detailed information about a container"
     }
   ],

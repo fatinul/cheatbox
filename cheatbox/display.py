@@ -53,7 +53,6 @@ class Display:
             self.command_width = int(json_data["STYLE"]["command_width"])
             self.outer_width = int(json_data["STYLE"]["outer_width"])
             self.primary_style = json_data["STYLE"]["primary_color"]
-            print(self.command_width, self.outer_width, self.primary_style)
             del json_data["STYLE"]
 
         console = Console(width=self.outer_width)
