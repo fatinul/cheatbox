@@ -31,10 +31,8 @@
   <img width="900" src="https://raw.githubusercontent.com/fatinul/cheatbox/master/images/linux.png">
 </div>
 
-### Docker
-<div align="center">
-  <img width="900" src="https://raw.githubusercontent.com/fatinul/cheatbox/master/images/docker.png">
-</div>
+
+> See more at: [CHEATSHEET.md](CHEATSHEET.md) 
 
 ## Features
 
@@ -42,55 +40,110 @@
 | :----- | :------ |
 | **List Down Cheatsheet** | Using [pick](https://github.com/aisk/pick.git) to list down all available cheatsheet |
 
----
-
 ## Motivation
 
-I am currently (as of early 2026) in my job hunting phase. When scrolling on Linkedin, I keep on seeing the _Linux Cheatsheet post_. 
+I am currently in my job hunting phase. When scrolling on Linkedin, I keep on seeing these _Linux Cheatsheet post_. 
 
-Since a lot of them have different and unconsistent style, I think I can remake it using my own style.  
+Since a lot of them have different and unconsistent style, I think I can remake them using my own style - aka. terminal style.  
 
 > P/S: If you want to connect, this is my Linkedin -> [Fatinul](www.linkedin.com/in/fatinul)
- 
----
 
-## Installation
 
-| Method | Command |
-| :----- | :------ |
-| pipx *(recommended)* | `pipx install mvw` |
-| uv | `uv tool install mvw` |
-| pip | `pip install mvw` |
 
-### From Source (recommended: uv)
+## How to Contribute / Create my own Cheatsheet?
 
+### Prerequisite
+- Have `uv` installed
+
+### Steps
+1. Clone the repo first
 ```bash
 git clone https://github.com/fatinul/cheatbox
 cd cheatbox
-uv run -m cheatbox.main
+uv sync
+uv run cheatbox
 ```
+> NOTE: You should see every available cheatsheets
 
-## Usage
+2. Create a json file with the domain name (linux.json, docker.json, ..) inside the `data/` directory
+3. Edit the template below
 
-```bash
-cheatbox
+| Key | Note |
+| :----- | :------ |
+| **LOGO** | The logo of the cheatsheet, only edit the string inside `[..]` of `"ascii"`. It uses [rich](https://rich.readthedocs.io/en/stable/appendix/colors.html) for color |
+| **TITLE** | Similar guide with the LOGO, however not recommend to add any color |
+| **STYLE** | `command_width`: left column of each box, `outer_width`: overall bento box width, `primary_color`: Overall color of border, TITLE, etc.. |
+| **COMMAND** | Can see the boilerplate of Linux Basic Command. Just change the `command` & `description`. Can add as many as you want but recommended to have around 6 box/subdomain/category |
 ```
-
----
-
-## Configuration
-
-**Fork** the repo then **edit** or add the `json` file in the `data/` folder
-
----
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "    [bold black].--. [/]",
+        "   [bold black]|[white]o[/][yellow]_[/][white]o[/] |[/]",
+        "   [bold black]|[yellow]:_/[/] |[/]",
+        "  [bold black]/[white]/   \\ [/]\\ [/]",
+        " [bold black]([white]|     |[/] )[/]",
+        "[yellow]/'\\_   _/`\\ [/]",
+        "[yellow]\\___)=(___/[/]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "    __    _                 ",
+        "   / /   (_)___  __  ___  __",
+        "  / /   / / __ \\/ / / / |/ /",
+        " / /___/ / / / / /_/ />   <  ",
+        "/_____/_/_/ /_/\\__,_/__/|__|  "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 8,
+    "outer_width": 120,
+    "primary_color": "yellow"
+  },
+  "Basic Commands": [
+    {
+      "command": "ls",
+      "description": "List directory contents"
+    },
+    {
+      "command": "cd",
+      "description": "Change directory"
+    },
+    {
+      "command": "pwd",
+      "description": "Print working directory"
+    }
+  ],
+  "File Operations": [
+    {
+      "command": "cat",
+      "description": "Concatenate and display file contents"
+    },
+    {
+      "command": "less",
+      "description": "View file contents one screen at a time"
+    },
+    {
+      "command": "grep",
+      "description": "Search for text within files"
+    }
+  ]
+}
+```
+4. After finish editing the `.json` file, run `uv run cheatbox` to choose your json file name
+5. FINISH. Post on Linkedin or do whatever you want! Have a pull request so others can share your cheatsheet!
 
 ## Inspiration
 
 `cheatbox` is inspired by the cheatsheet that often posted in Linkedin feed.
 
----
-
 ## License
 
 GPL-3.0
+
 
