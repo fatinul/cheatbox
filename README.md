@@ -15,7 +15,6 @@
       <p><em>Catalogue your own movie review inside your terminal.</em></p>
       <img src="https://img.shields.io/badge/python-3.12+-blue.svg" alt="Python">
       <img src="https://img.shields.io/github/license/fatinul/mvw" alt="License">
-      <img alt="GitHub Release" src="https://img.shields.io/github/v/release/fatinul/cheatbox?color=green">
       <br><br>
       <code>pipx install cheatbox</code>
       <br><br>
@@ -161,6 +160,7 @@ GPL-3.0
 <div align="center">
   <h3>Drop some star ⭐, would be really appreciated!</h3>
 </div>
+
 
 
 
