@@ -24,15 +24,13 @@
 </table>
 </div>
 
-
----
-### Linux
 <div align="center">
+  <h2>CheatBox Showcase</h2>
+  <p>See more at: <a href="CHEATSHEET.md">CHEATSHEET.md</a></p>
   <img width="900" src="https://raw.githubusercontent.com/fatinul/cheatbox/master/images/linux.png">
 </div>
 
-
-> See more at: [CHEATSHEET.md](CHEATSHEET.md) 
+---
 
 ## Features
 
@@ -48,32 +46,39 @@ Since a lot of them have different and unconsistent style, I think I can remake 
 
 > P/S: If you want to connect, this is my Linkedin -> [Fatinul](www.linkedin.com/in/fatinul)
 
+## Guide
+> NOTE: Have `uv` installed
 
+<details>
+<summary>👣 Steps</summary>
 
-## How to Contribute / Create my own Cheatsheet?
+  1. Clone the repo first
 
-### Prerequisite
-- Have `uv` installed
-
-### Steps
-1. Clone the repo first
 ```bash
 git clone https://github.com/fatinul/cheatbox
 cd cheatbox
 uv sync
 uv run cheatbox
 ```
-> NOTE: You should see every available cheatsheets
 
-2. Create a json file with the domain name (linux.json, docker.json, ..) inside the `data/` directory
-3. Edit the template below
+> NOTE: You should see every available cheatsheets after run the code above
 
+2. Create a json file with the domain name `(linux.json, docker.json, ..)` inside the `data/` directory
+
+3. Edit the template below.
+
+<details>
+  <summary>📋 JSON template</summary>
+
+  
 | Key | Note |
 | :----- | :------ |
 | **LOGO** | The logo of the cheatsheet, only edit the string inside `[..]` of `"ascii"`. It uses [rich](https://rich.readthedocs.io/en/stable/appendix/colors.html) for color |
 | **TITLE** | Similar guide with the LOGO, however not recommend to add any color |
 | **STYLE** | `command_width`: left column of each box, `outer_width`: overall bento box width, `primary_color`: Overall color of border, TITLE, etc.. |
 | **COMMAND** | Can see the boilerplate of Linux Basic Command. Just change the `command` & `description`. Can add as many as you want but recommended to have around 6 box/subdomain/category |
+
+  
 ```
 {
   "LOGO": [
@@ -135,15 +140,27 @@ uv run cheatbox
   ]
 }
 ```
+</details>
+
+
 4. After finish editing the `.json` file, run `uv run cheatbox` to choose your json file name
-5. FINISH. Post on Linkedin or do whatever you want! Have a pull request so others can share your cheatsheet!
+
+5. **FINISH**. Post on Linkedin or do whatever you want! Have a pull request so others can share your cheatsheet too!
+
+</details>
+
 
 ## Inspiration
 
-`cheatbox` is inspired by the cheatsheet that often posted in Linkedin feed.
+`cheatbox` is inspired by the common cheatsheet posts in the Linkedin feed and also [BENTOBOX](https://www.google.com/search?q=bento).
 
 ## License
 
 GPL-3.0
+
+<div align="center">
+  <h3>Drop some star ⭐, would be really appreciated!</h3>
+</div>
+
 
 
