@@ -1,0 +1,95 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[blue]    ,.⋅'^'⋅.,",
+        "   /[/][white] o  °  o [/][blue]\\",
+        "  /[/][white]  ,\\ | /, [/][blue] \\ ",
+        " '[/][white] o---[/][blue] * [/][white]---o[/][blue] '",
+        "  \\ [/][white] \\ /_\\ / [/][blue] /",
+        "   \\ [/][white] o   o [/][blue] /",
+        "    ---------[/]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "    __ __      __                         __               ",
+        "   / // /_  __/ /_  ___  _________  ___  / /____  _____    ",
+        "  / , </ / / / __ \\/ _ \\/ ___/ __ \\/ _ \\/ __/ _ \\/ ___/    ",
+        " / /| / /_/ / /_/ /  __/ /  / / / /  __/ /_/  __(__  )     ",
+        "/_/ |_\\__,_/_.___/\\___/_/  /_/ /_/\\___/\\__/\\___/____/"
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 34,
+    "outer_width": 135,
+    "primary_color": "blue"
+  },
+  "Cluster Management": [
+    {
+      "command": "kubectl cluster-info",
+      "description": "Display cluster and service endpoints"
+    },
+    {
+      "command": "kubectl config get-contexts",
+      "description": "List all available cluster contexts"
+    },
+    {
+      "command": "kubectl config use-context [name]",
+      "description": "Switch to a specific cluster context"
+    }
+  ],
+  "Viewing Resources": [
+    {
+      "command": "kubectl get [resource]",
+      "description": "List resources (e.g., pods, nodes, services)"
+    },
+    {
+      "command": "kubectl describe [resource] [name]",
+      "description": "Show detailed state and events of a resource"
+    },
+    {
+      "command": "kubectl logs [pod]",
+      "description": "Print logs for a container in a pod"
+    },
+    {
+      "command": "kubectl top [resource]",
+      "description": "Display CPU and memory usage"
+    }
+  ],
+  "Operations": [
+    {
+      "command": "kubectl apply -f [file]",
+      "description": "Create or update resources from a YAML file"
+    },
+    {
+      "command": "kubectl delete [resource] [name]",
+      "description": "Remove a resource by name"
+    },
+    {
+      "command": "kubectl edit [resource] [name]",
+      "description": "Edit a resource's configuration in-place"
+    },
+    {
+      "command": "kubectl rollout restart [deployment]",
+      "description": "Restart all pods within a deployment"
+    }
+  ],
+  "Troubleshooting": [
+    {
+      "command": "kubectl exec -it [pod] -- [cmd]",
+      "description": "Execute a command inside a container"
+    },
+    {
+      "command": "kubectl port-forward [pod] [port]",
+      "description": "Forward local ports to a pod"
+    },
+    {
+      "command": "kubectl cp [file] [pod]:[path]",
+      "description": "Copy files to or from a container"
+    }
+  ]
+}

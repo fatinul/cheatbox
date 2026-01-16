@@ -24,8 +24,8 @@
     }
   ],
   "STYLE": {
-    "command_width": 8,
-    "outer_width": 120,
+    "command_width": 9,
+    "outer_width": 125,
     "primary_color": "yellow"
   },
   "Basic Commands": [
