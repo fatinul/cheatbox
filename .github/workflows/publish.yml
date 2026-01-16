@@ -9,7 +9,6 @@ on:
 
 jobs:
   publish:
-    needs: check # This ensures Job 1 passed
     if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     permissions:
