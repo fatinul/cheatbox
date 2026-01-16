@@ -1,6 +1,6 @@
 [project]
 name = "cheatbox"
-version = "0.1.0"
+version = "0.1.1"
 description = "cheatsheet in bentobox"
 readme = "README.md"
 authors = [
