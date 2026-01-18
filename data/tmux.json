@@ -1,0 +1,215 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "  [green]╔════════════════╗[/]",
+        "  [green]║[/][white]        [/][green]│[/][white]       [/][green]║[/]",
+        "  [green]╠════════════════╣[/]",
+        "  [green]║[/][white]              [/][green]  ║[/]",
+        "  [green]╚════════════════╝[/]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "  [green]████████╗[/] [green]███╗   ███╗[/] [green]██╗   ██╗[/] [green]██╗  ██╗[/]",
+        "  [green]╚══██╔══╝[/] [green]████╗ ████║[/] [green]██║   ██║[/] [green]╚██╗██╔╝[/]",
+        "     [green]██║[/]    [green]██╔████╔██║[/] [green]██║   ██║[/] [green] ╚███╔╝[/]",
+        "     [green]██║[/]    [green]██║╚██╔╝██║[/] [green]██║   ██║[/] [green] ██╔██╗[/]",
+        "     [green]██║[/]    [green]██║ ╚═╝ ██║[/] [green]╚██████╔╝[/] [green]██╔╝ ██╗[/]",
+        "     [green]╚═╝[/]    [green]╚═╝     ╚═╝[/] [green] ╚═════╝[/] [green]╚═╝  ╚═╝[/]"
+      ]
+
+    }
+  ],
+  "STYLE": {
+    "command_width": 20,
+    "outer_width": 130,
+    "primary_color": "green"
+  },
+  "Session Management": [
+    {
+      "command": "tmux new -s <name>",
+      "description": "Create a new named session"
+    },
+    {
+      "command": "tmux attach -t <name>",
+      "description": "Attach to a session"
+    },
+    {
+      "command": "tmux detach",
+      "description": "Detach from current session"
+    },
+    {
+      "command": "tmux ls",
+      "description": "List all sessions"
+    },
+    {
+      "command": "tmux kill-session -t <name>",
+      "description": "Kill a specific session"
+    },
+    {
+      "command": "tmux kill-server",
+      "description": "Kill all sessions"
+    },
+    {
+      "command": "tmux rename-session -t <old> <new>",
+      "description": "Rename a session"
+    }
+  ],
+  "Window Management": [
+    {
+      "command": "Ctrl+b c",
+      "description": "Create a new window"
+    },
+    {
+      "command": "Ctrl+b n",
+      "description": "Switch to next window"
+    },
+    {
+      "command": "Ctrl+b p",
+      "description": "Switch to previous window"
+    },
+    {
+      "command": "Ctrl+b 0-9",
+      "description": "Switch to window by number"
+    },
+    {
+      "command": "Ctrl+b ,",
+      "description": "Rename current window"
+    },
+    {
+      "command": "Ctrl+b &",
+      "description": "Kill current window"
+    },
+    {
+      "command": "Ctrl+b w",
+      "description": "List all windows"
+    }
+  ],
+  "Pane Management": [
+    {
+      "command": "Ctrl+b %",
+      "description": "Split window vertically"
+    },
+    {
+      "command": "Ctrl+b \"",
+      "description": "Split window horizontally"
+    },
+    {
+      "command": "Ctrl+b arrow keys",
+      "description": "Navigate between panes"
+    },
+    {
+      "command": "Ctrl+b x",
+      "description": "Kill current pane"
+    },
+    {
+      "command": "Ctrl+b z",
+      "description": "Zoom/unzoom current pane"
+    },
+    {
+      "command": "Ctrl+b {",
+      "description": "Swap pane with previous"
+    },
+    {
+      "command": "Ctrl+b }",
+      "description": "Swap pane with next"
+    },
+    {
+      "command": "Ctrl+b Ctrl+arrow",
+      "description": "Resize pane"
+    }
+  ],
+  "Copy Mode & Scrolling": [
+    {
+      "command": "Ctrl+b [",
+      "description": "Enter copy mode"
+    },
+    {
+      "command": "Space",
+      "description": "Start selection (in copy mode)"
+    },
+    {
+      "command": "Enter",
+      "description": "Copy selection (in copy mode)"
+    },
+    {
+      "command": "Ctrl+b ]",
+      "description": "Paste from buffer"
+    },
+    {
+      "command": "q",
+      "description": "Exit copy mode"
+    },
+    {
+      "command": "/",
+      "description": "Search forward (in copy mode)"
+    },
+    {
+      "command": "?",
+      "description": "Search backward (in copy mode)"
+    }
+  ],
+  "Advanced Features": [
+    {
+      "command": "Ctrl+b d",
+      "description": "Detach from session"
+    },
+    {
+      "command": "Ctrl+b s",
+      "description": "List all sessions and windows"
+    },
+    {
+      "command": "Ctrl+b t",
+      "description": "Show clock"
+    },
+    {
+      "command": "Ctrl+b ?",
+      "description": "List all key bindings"
+    },
+    {
+      "command": "Ctrl+b :",
+      "description": "Enter command mode"
+    },
+    {
+      "command": "tmux show-options -g",
+      "description": "Show global options"
+    },
+    {
+      "command": "tmux set-option -g <option> <value>",
+      "description": "Set a global option"
+    }
+  ],
+  "Useful Commands": [
+    {
+      "command": "tmux list-keys",
+      "description": "List all key bindings"
+    },
+    {
+      "command": "tmux list-commands",
+      "description": "List all commands"
+    },
+    {
+      "command": "tmux info",
+      "description": "Show session information"
+    },
+    {
+      "command": "tmux source-file ~/.tmux.conf",
+      "description": "Reload tmux configuration"
+    },
+    {
+      "command": "Ctrl+b r",
+      "description": "Reload config (if bound)"
+    },
+    {
+      "command": "tmux capture-pane -p",
+      "description": "Capture pane content to stdout"
+    },
+    {
+      "command": "tmux save-buffer -b 0 file.txt",
+      "description": "Save buffer to file"
+    }
+  ]
+}
