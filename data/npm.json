@@ -1,0 +1,143 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[red] ################ [/red]",
+        "[red] ##[white]############[/white]## [/red]",
+        "[red] ##[white]######[/white]####[white]##[/white]## [/red]",
+        "[red] ##[white]######[/white]####[white]##[/white]## [/red]",
+        "[red] ##[white]######[/white]####[white]##[/white]## [/red]",
+        "[red] ##[white]######[/white]####[white]##[/white]## [/red]",
+        "[red] ################ [/red]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "     ____  ____  ____ ___ ",
+        "    / __ \\/ __ \\/ __ `__ \\",
+        "   / / / / /_/ / / / / / /",
+        "  /_/ /_/ .___/_/ /_/ /_/ ",
+        "       /_/                "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 20,
+    "outer_width": 140,
+    "primary_color": "red"
+  },
+  "Project Initialization": [
+    {
+      "command": "npm init",
+      "description": "Interactively create a package.json file"
+    },
+    {
+      "command": "npm init -y",
+      "description": "Create a package.json with default values"
+    },
+    {
+      "command": "npm config list",
+      "description": "Show all configured npm settings"
+    }
+  ],
+  "Installing Dependencies": [
+    {
+      "command": "npm install",
+      "description": "Install all dependencies from package.json"
+    },
+    {
+      "command": "npm i <pkg>",
+      "description": "Install a package"
+    },
+    {
+      "command": "npm i <pkg> -D",
+      "description": "Install package as a devDependency"
+    },
+    {
+      "command": "npm i <pkg> -g",
+      "description": "Install a package globally"
+    },
+    {
+      "command": "npm ci",
+      "description": "Clean install using package-lock.json"
+    }
+  ],
+  "Updating & Removing": [
+    {
+      "command": "npm update",
+      "description": "Update packages to latest allowed version"
+    },
+    {
+      "command": "npm uninstall <pkg>",
+      "description": "Remove a package"
+    },
+    {
+      "command": "npm outdated",
+      "description": "Check for outdated packages"
+    },
+    {
+      "command": "npm prune",
+      "description": "Remove packages not in package.json"
+    }
+  ],
+  "Running Scripts": [
+    {
+      "command": "npm run <script>",
+      "description": "Run a script defined in package.json"
+    },
+    {
+      "command": "npm start",
+      "description": "Run the 'start' script"
+    },
+    {
+      "command": "npm test",
+      "description": "Run the 'test' script"
+    },
+    {
+      "command": "npx <pkg>",
+      "description": "Execute a binary without installing it"
+    }
+  ],
+  "Maintenance & Security": [
+    {
+      "command": "npm audit",
+      "description": "Scan for security vulnerabilities"
+    },
+    {
+      "command": "npm audit fix",
+      "description": "Automatically fix vulnerabilities"
+    },
+    {
+      "command": "npm list --depth=0",
+      "description": "List installed top-level packages"
+    },
+    {
+      "command": "npm cache clean --force",
+      "description": "Clear the local npm cache"
+    },
+    {
+      "command": "npm explain <pkg>",
+      "description": "Show why a package is installed"
+    }
+  ],
+  "Publishing": [
+    {
+      "command": "npm login",
+      "description": "Log in to the npm registry"
+    },
+    {
+      "command": "npm publish",
+      "description": "Upload package to the registry"
+    },
+    {
+      "command": "npm version <type>",
+      "description": "Bump version (patch, minor, major)"
+    },
+    {
+      "command": "npm link",
+      "description": "Symlink package for local development"
+    }
+  ]
+}
