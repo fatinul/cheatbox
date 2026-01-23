@@ -1,0 +1,153 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+    "     __________     ",
+    "    /   ______ \\ \\     ",
+    "   /   /      \\ \\ \\   ",
+    "  /   /_______/ / /  ",
+    " /   __________  /    ",
+    "/   /         / /    ",
+    "\\  /_________/ /   ",
+    " \\__________/ /   "
+]
+
+    }
+  ],
+  "TITLE": [
+    {
+        "ascii": [
+          "    ____              ",
+          "   / __ )__  ______   ",
+          "  / __  / / / / __ \\  ",
+          " / /_/ / /_/ / / / /  ",
+          "/_____/\\__,_/_/ /_/   "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 28,
+    "outer_width": 150,
+    "primary_color": "yellow"
+  },
+  "Project Management": [
+    {
+      "command": "bun init",
+      "description": "Create a new Bun project"
+    },
+    {
+      "command": "bun init -y",
+      "description": "Create a project with default settings"
+    },
+    {
+      "command": "bun run <file>",
+      "description": "Run a JavaScript or TypeScript file"
+    },
+    {
+      "command": "bun run <script>",
+      "description": "Run a script from package.json"
+    }
+  ],
+  "Package Management": [
+    {
+      "command": "bun install",
+      "description": "Install dependencies"
+    },
+    {
+      "command": "bun install <pkg>",
+      "description": "Install a package"
+    },
+    {
+      "command": "bun install -d <pkg>",
+      "description": "Install a dev dependency"
+    },
+    {
+      "command": "bun remove <pkg>",
+      "description": "Remove a dependency"
+    },
+    {
+      "command": "bun update",
+      "description": "Update all dependencies"
+    },
+    {
+      "command": "bun add <pkg>",
+      "description": "Alias for installing a package"
+    }
+  ],
+  "Running & Scripts": [
+    {
+      "command": "bun run index.ts",
+      "description": "Run a TypeScript file directly"
+    },
+    {
+      "command": "bun run dev",
+      "description": "Run a dev script"
+    },
+    {
+      "command": "bun --watch <file>",
+      "description": "Run a file with watch mode"
+    }
+  ],
+  "Development Server": [
+    {
+      "command": "bun serve <file>",
+      "description": "Serve a file over HTTP"
+    },
+    {
+      "command": "bun --hot <file>",
+      "description": "Enable hot reloading"
+    }
+  ],
+  "Testing": [
+    {
+      "command": "bun test",
+      "description": "Run all tests"
+    },
+    {
+      "command": "bun test <file>",
+      "description": "Run tests in a specific file"
+    },
+    {
+      "command": "bun test --watch",
+      "description": "Run tests in watch mode"
+    }
+  ],
+  "Formatting & Linting": [
+    {
+      "command": "bun lint",
+      "description": "Run Bun's linter"
+    },
+    {
+      "command": "bun fmt",
+      "description": "Format code using Bun"
+    }
+  ],
+  "Build & Bundling": [
+    {
+      "command": "bun build <file>",
+      "description": "Bundle a file for production"
+    },
+    {
+      "command": "bun build <file> --outdir dist",
+      "description": "Bundle output to a directory"
+    },
+    {
+      "command": "bun build <file> --minify",
+      "description": "Minify bundled output"
+    }
+  ],
+  "Utilities": [
+    {
+      "command": "bun repl",
+      "description": "Start Bun REPL"
+    },
+    {
+      "command": "bun pm ls",
+      "description": "List installed packages"
+    },
+    {
+      "command": "bun --version",
+      "description": "Show Bun version"
+    }
+  ]
+}
