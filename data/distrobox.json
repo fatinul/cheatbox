@@ -1,0 +1,96 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[blue]    ___  _     _[/blue]",
+        "[blue]   |   \\(_)___| |_ _ __ ___[/blue]",
+        "[blue]   | |) | / __| __|  __|/ _ \\[/blue]",
+        "[blue]   | |  | \\__ \\ |_| |  | (_) |[/blue]",
+        "[blue]   |_|  |_|___/\\__|_|   \\___/[/blue]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "   ____  _     _                                ",
+        "  |  _ \\(_)___| |_ _ __ ___  _   ___  _.._ __ ",
+        "  | | | | / __| __| '__/ _ \\| | | \\ \\/ / '__| ",
+        "  | |_| | \\__ \\ |_| | | (_) | |_| |>  <| |    ",
+        "  |____/|_|___/\\__|_|  \\___/ \\__, /_/\\_\\_|    ",
+        "                              |___/            "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 40,
+    "outer_width": 140,
+    "primary_color": "blue"
+  },
+  "Container Management": [
+    {
+      "command": "distrobox create --name mybox --image ubuntu:22.04",
+      "description": "Create a new distrobox container"
+    },
+    {
+      "command": "distrobox create -n mybox -i fedora:latest",
+      "description": "Create with custom image (short options)"
+    },
+    {
+      "command": "distrobox enter mybox",
+      "description": "Enter/access a distrobox container"
+    },
+    {
+      "command": "distrobox list",
+      "description": "List all distrobox containers"
+    },
+    {
+      "command": "distrobox remove mybox",
+      "description": "Remove a distrobox container"
+    }
+  ],
+  "Running Commands": [
+    {
+      "command": "distrobox-run -n mybox -- command",
+      "description": "Run a command inside a distrobox"
+    },
+    {
+      "command": "distrobox run -n mybox -- apt update",
+      "description": "Run apt update in the container"
+    }
+  ],
+  "Container Customization": [
+    {
+      "command": "distrobox create --name mybox --image debian:bookworm --home /custom/home",
+      "description": "Create with custom home directory"
+    },
+    {
+      "command": "distrobox create -n mybox -i alpine:latest --init",
+      "description": "Create with init system enabled"
+    }
+  ],
+  "Host Integration": [
+    {
+      "command": "distrobox-export --app myapp --export-path ~/.local/bin",
+      "description": "Export an application from container to host"
+    },
+    {
+      "command": "distrobox-enter mybox -- sudo apt install package",
+      "description": "Install packages in the container"
+    }
+  ],
+  "Info & Upgrade": [
+    {
+      "command": "distrobox ps",
+      "description": "Show running distrobox containers"
+    },
+    {
+      "command": "distrobox upgrade",
+      "description": "Upgrade all distrobox containers"
+    },
+    {
+      "command": "distrobox version",
+      "description": "Show distrobox version"
+    }
+  ]
+}

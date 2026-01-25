@@ -1,0 +1,100 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[cyan]   _____      ___   __  ___   __ ____  ___[/cyan]",
+        "[cyan]  / ___/ |   / / | / / / _ \\ / //_  / / _ \\[/cyan]",
+        "[cyan] / /__| |  / /| |/ / / // / / ,<  / / //_/[/cyan]",
+        "[cyan] \\___/| |_/ / |___/ /____/ /_/|_|/_/  \\___/[/cyan]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "  ___  __  __  ___   ___   __    ",
+        " / __||  \\/  || _ \\ / _ \\ /  \\   ",
+        "| (__ | () () ||  _/| (_) |    |  ",
+        " \\___||__/\\__||_|   \\___/|_/\\_\\ ",
+        "                              "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 30,
+    "outer_width": 140,
+    "primary_color": "cyan"
+  },
+  "Environment Management": [
+    {
+      "command": "conda create -n myenv python=3.10",
+      "description": "Create a new conda environment with Python 3.10"
+    },
+    {
+      "command": "conda activate myenv",
+      "description": "Activate the conda environment"
+    },
+    {
+      "command": "conda deactivate",
+      "description": "Deactivate the current conda environment"
+    },
+    {
+      "command": "conda env list",
+      "description": "List all conda environments"
+    },
+    {
+      "command": "conda remove -n myenv --all",
+      "description": "Remove a conda environment"
+    }
+  ],
+  "Package Management": [
+    {
+      "command": "conda install numpy pandas",
+      "description": "Install packages into the current environment"
+    },
+    {
+      "command": "conda install -c conda-forge package_name",
+      "description": "Install from conda-forge channel"
+    },
+    {
+      "command": "conda list",
+      "description": "List installed packages in the current environment"
+    },
+    {
+      "command": "conda update package_name",
+      "description": "Update a package to the latest version"
+    },
+    {
+      "command": "conda remove package_name",
+      "description": "Uninstall a package"
+    }
+  ],
+  "Searching & Info": [
+    {
+      "command": "conda search package_name",
+      "description": "Search for available packages"
+    },
+    {
+      "command": "conda info",
+      "description": "Display conda version and system information"
+    },
+    {
+      "command": "conda info --envs",
+      "description": "Show detailed information about all environments"
+    }
+  ],
+  "Environment Files": [
+    {
+      "command": "conda env export > environment.yml",
+      "description": "Export current environment to YAML file"
+    },
+    {
+      "command": "conda env create -f environment.yml",
+      "description": "Create environment from YAML file"
+    },
+    {
+      "command": "conda env update -f environment.yml",
+      "description": "Update environment from YAML file"
+    }
+  ]
+}
