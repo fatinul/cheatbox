@@ -2,10 +2,11 @@
   "LOGO": [
     {
       "ascii": [
-        "[blue]    ___  __  ___[/blue]",
-        "[blue]   / _ \\/ / / _ \\[/blue]",
-        "[blue]  / .__/ /_/ .__/[/blue]",
-        "[blue] /_/  \\____/_/   [/blue]"
+        "[yellow]         ___[/yellow]",
+        "[yellow]        / _ \\[/yellow]",
+        "[yellow]       / /__/[/yellow]",
+        "[yellow]      / __ \\ [/yellow]",
+        "[yellow]     /_/  \\_\\[/yellow]"
       ]
     }
   ],

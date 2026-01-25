@@ -1,0 +1,97 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[blue]   ___  ___   ___  ____   __  __   ___  _  _  [/blue]",
+        "[blue]  / __||  _\\ / -_)||  _|| |  \\/ \\  / -_)| | | | [/blue]",
+        "[blue] | (_ || |_ \\\\__  \\\\| |_ | |   / _ \\ |__  \\\\ |/ / [/blue]",
+        "[blue]  \\___||___/|___/  |___||_|  / ___ \\\\ |_| |   <  [/blue]",
+        "[blue]                          / /   \\\\ \\\\ [/blue]",
+        "[blue]                         /_/     \\\\_\\\\ [/blue]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "[blue]  ____  ____  _  _  _  _  ___   __  ___  _  _[/blue]",
+        "[blue] / ___||  _ \\| |/ /| \\/ |/ _ \\ |  \\|  _\\| | | |[/blue]",
+        "[blue] \\___ \\| | | |   < | () < |  __/| |  | |_ | |_| |[/blue]",
+        "[blue] |___/|_| |_|_|\\_\\|_||_/\\___|\\__|_|___\\\\___| \\___/[/blue]"
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 40,
+    "outer_width": 140,
+    "primary_color": "blue"
+  },
+  "Setup & Configuration": [
+    {
+      "command": "curl -s \"https://get.sdkman.io\" | bash",
+      "description": "Install SDKMAN"
+    },
+    {
+      "command": "source \"$HOME/.sdkman/bin/sdkman-init.sh\"",
+      "description": "Initialize SDKMAN"
+    }
+  ],
+  "SDK Listing": [
+    {
+      "command": "sdk list",
+      "description": "List available SDKs"
+    },
+    {
+      "command": "sdk list java",
+      "description": "List available Java versions"
+    },
+    {
+      "command": "sdk list maven",
+      "description": "List available Maven versions"
+    }
+  ],
+  "Installation": [
+    {
+      "command": "sdk install java 21-tem",
+      "description": "Install Java 21 (Temurin)"
+    },
+    {
+      "command": "sdk install maven 3.9.0",
+      "description": "Install Maven 3.9.0"
+    },
+    {
+      "command": "sdk install gradle 8.1.1",
+      "description": "Install Gradle 8.1.1"
+    }
+  ],
+  "Default Version": [
+    {
+      "command": "sdk default java 21-tem",
+      "description": "Set Java 21 as default"
+    }
+  ],
+  "Updates & Cleanup": [
+    {
+      "command": "sdk upgrade java",
+      "description": "Upgrade to latest Java"
+    },
+    {
+      "command": "sdk uninstall java 20",
+      "description": "Remove specific version"
+    },
+    {
+      "command": "sdk selfupdate",
+      "description": "Update SDKMAN itself"
+    }
+  ],
+  "Offline Mode": [
+    {
+      "command": "sdk offline enable",
+      "description": "Enable offline mode"
+    },
+    {
+      "command": "sdk offline disable",
+      "description": "Disable offline mode"
+    }
+  ]
+}

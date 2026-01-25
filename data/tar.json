@@ -1,0 +1,103 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[magenta]   ______         _[/magenta]",
+        "[magenta]  |  ____|  ___   | |[/magenta]",
+        "[magenta]  | |__    / _ \\  | |[/magenta]",
+        "[magenta]  |  __|  |  __/  |_|[/magenta]",
+        "[magenta]  | |___   \\___   |_| [/magenta]",
+        "[magenta]  |_____|  ___/       [/magenta]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "   ____  ___  _  __  _  _  ____  _  ___    ",
+        "  |  _ \\/ -_)| |/ / | || ||  _ \\| |/ -_)   ",
+        "  | .__/\\___|__,_/  |__||_||_) /_/_|\\___|  ",
+        "  |_|                   |___/             "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 40,
+    "outer_width": 140,
+    "primary_color": "magenta"
+  },
+  "Archiving": [
+    {
+      "command": "tar -cf archive.tar files/",
+      "description": "Create tar archive"
+    },
+    {
+      "command": "tar -xf archive.tar",
+      "description": "Extract tar archive"
+    },
+    {
+      "command": "tar -tf archive.tar",
+      "description": "List tar contents"
+    }
+  ],
+  "Compression with tar": [
+    {
+      "command": "tar -czf archive.tar.gz files/",
+      "description": "Create gzip compressed tar"
+    },
+    {
+      "command": "tar -xzf archive.tar.gz",
+      "description": "Extract gzip tar"
+    },
+    {
+      "command": "tar -cjf archive.tar.bz2 files/",
+      "description": "Create bzip2 compressed tar"
+    },
+    {
+      "command": "tar -xjf archive.tar.bz2",
+      "description": "Extract bzip2 tar"
+    }
+  ],
+  "ZIP Files": [
+    {
+      "command": "zip -r archive.zip folder/",
+      "description": "Create ZIP archive"
+    },
+    {
+      "command": "unzip archive.zip",
+      "description": "Extract ZIP archive"
+    },
+    {
+      "command": "unzip -l archive.zip",
+      "description": "List ZIP contents"
+    },
+    {
+      "command": "unzip -t archive.zip",
+      "description": "Test ZIP integrity"
+    }
+  ],
+  "Gzip Compression": [
+    {
+      "command": "gzip file.txt",
+      "description": "Compress file to .gz"
+    },
+    {
+      "command": "gunzip file.txt.gz",
+      "description": "Decompress .gz file"
+    },
+    {
+      "command": "gzip -d file.txt.gz",
+      "description": "Decompress (alternative)"
+    }
+  ],
+  "Advanced tar": [
+    {
+      "command": "tar -czf - files/ | ssh user@host 'tar -xz -C /remote/path'",
+      "description": "Compress and pipe to remote"
+    },
+    {
+      "command": "tar --exclude='*.log' -czf archive.tar.gz folder/",
+      "description": "Archive excluding patterns"
+    }
+  ]
+}

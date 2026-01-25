@@ -1,0 +1,127 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[yellow]    _____    _   _   [/yellow]",
+        "[yellow]   |  _  |  | | | |  [/yellow]",
+        "[yellow]   | |_| |  | |_| |  [/yellow]",
+        "[yellow]   |_____|  |_____| [/yellow]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "[yellow]   ____   ___  ____   ___  _   _[/yellow]",
+        "[yellow]  / __ \\ / -_||  _/  / -_)| | | |[/yellow]",
+        "[yellow] / / / /| |_ || |_  | |__ | |_| |[/yellow]",
+        "[yellow]/_/ /_/ |___||____\\  \\___| \\__/[/yellow]"
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 35,
+    "outer_width": 140,
+    "primary_color": "yellow"
+  },
+  "User Management": [
+    {
+      "command": "sudo useradd username",
+      "description": "Create new user"
+    },
+    {
+      "command": "sudo useradd -m -s /bin/bash username",
+      "description": "Create user with home dir and shell"
+    },
+    {
+      "command": "sudo userdel username",
+      "description": "Delete user"
+    },
+    {
+      "command": "sudo userdel -r username",
+      "description": "Delete user and home directory"
+    }
+  ],
+  "User Info": [
+    {
+      "command": "id",
+      "description": "Show current user ID and groups"
+    },
+    {
+      "command": "id username",
+      "description": "Show user ID and groups"
+    },
+    {
+      "command": "finger username",
+      "description": "Show user information"
+    },
+    {
+      "command": "who",
+      "description": "List logged-in users"
+    }
+  ],
+  "Group Management": [
+    {
+      "command": "sudo groupadd groupname",
+      "description": "Create new group"
+    },
+    {
+      "command": "sudo groupdel groupname",
+      "description": "Delete group"
+    },
+    {
+      "command": "sudo usermod -a -G groupname username",
+      "description": "Add user to group"
+    },
+    {
+      "command": "groups username",
+      "description": "Show user groups"
+    }
+  ],
+  "Password Management": [
+    {
+      "command": "passwd",
+      "description": "Change current user password"
+    },
+    {
+      "command": "sudo passwd username",
+      "description": "Change user password"
+    },
+    {
+      "command": "sudo usermod -L username",
+      "description": "Lock user account"
+    },
+    {
+      "command": "sudo usermod -U username",
+      "description": "Unlock user account"
+    }
+  ],
+  "Sudo Configuration": [
+    {
+      "command": "sudo visudo",
+      "description": "Edit sudoers file safely"
+    },
+    {
+      "command": "sudo -l",
+      "description": "List user sudo privileges"
+    },
+    {
+      "command": "sudo -i",
+      "description": "Switch to root user (interactive)"
+    }
+  ],
+  "File Ownership": [
+    {
+      "command": "chown username file.txt",
+      "description": "Change file owner"
+    },
+    {
+      "command": "chown username:groupname file.txt",
+      "description": "Change owner and group"
+    },
+    {
+      "command": "chown -R username directory/",
+      "description": "Recursively change ownership"
+    }
+  ]
+}

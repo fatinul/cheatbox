@@ -1,0 +1,117 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[cyan]   ___   ___ ___  __   _  _  __[/cyan]",
+        "[cyan]  | __| |_ _| _ \\/ /  | || |/ _\\[/cyan]",
+        "[cyan]  | _|   | | | \\/ /_  | \\/ /\\__\\[/cyan]",
+        "[cyan]  |___|  |_| |_/\\__/  |__/__|\\__/[/cyan]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "   _____  ___  ____  ___    __   __  __  ___",
+        "  |  ___||_ | |  __|/ _ \\  / /  / / / / / -_)",
+        "  | |_    | | | |__ | (_) |/ /__/ /__/ /|__  \\",
+        "  |___|  |___||____| \\___/|___|___|__/|_||___/"
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 35,
+    "outer_width": 140,
+    "primary_color": "cyan"
+  },
+  "File Creation": [
+    {
+      "command": "find . -name 'pattern'",
+      "description": "Find files by name"
+    },
+    {
+      "command": "find . -name '*.txt'",
+      "description": "Find by file extension"
+    },
+    {
+      "command": "find . -iname 'pattern'",
+      "description": "Case-insensitive find"
+    }
+  ],
+  "File Type": [
+    {
+      "command": "find . -type f",
+      "description": "Find only files"
+    },
+    {
+      "command": "find . -type d",
+      "description": "Find only directories"
+    },
+    {
+      "command": "find . -type l",
+      "description": "Find symbolic links"
+    }
+  ],
+  "File Size": [
+    {
+      "command": "find . -size +100M",
+      "description": "Find files larger than 100MB"
+    },
+    {
+      "command": "find . -size -10k",
+      "description": "Find files smaller than 10KB"
+    },
+    {
+      "command": "find . -size 50M",
+      "description": "Find files exactly 50MB"
+    }
+  ],
+  "File Age": [
+    {
+      "command": "find . -mtime -7",
+      "description": "Modified in last 7 days"
+    },
+    {
+      "command": "find . -atime +30",
+      "description": "Accessed more than 30 days ago"
+    },
+    {
+      "command": "find . -newer file.txt",
+      "description": "Find files newer than file.txt"
+    }
+  ],
+  "Permissions": [
+    {
+      "command": "find . -perm -644",
+      "description": "Find files with specific permissions"
+    },
+    {
+      "command": "find . -user username",
+      "description": "Find files owned by user"
+    }
+  ],
+  "Actions": [
+    {
+      "command": "find . -name '*.log' -delete",
+      "description": "Delete matching files"
+    },
+    {
+      "command": "find . -name '*.txt' -exec cat {} \\;",
+      "description": "Execute command on matches"
+    },
+    {
+      "command": "find . -name '*.jpg' -print0 | xargs -0 ls -lh",
+      "description": "Pipe results to another command"
+    }
+  ],
+  "Advanced": [
+    {
+      "command": "find . -path '*/dir/*' -name '*.txt'",
+      "description": "Search in specific path"
+    },
+    {
+      "command": "find . -not -name '*.log'",
+      "description": "Exclude pattern (NOT)"
+    }
+  ]
+}

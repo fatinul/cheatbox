@@ -1,0 +1,111 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[red]    __  ___  __    ___  [/red]",
+        "[red]   |  \\/  |/ /   / -_)[/red]",
+        "[red]   |/\\  /|  \\ \\  \\__\\[/red]",
+        "[red]   |/  \\/|_/ \\_\\/_____|[/red]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "[red]   __  ___   __    ___   ___[/red]",
+        "[red]  |  \\/  | |/ /   / -_) / -_)[/red]",
+        "[red]  |/\\  /|   <     \\__  \\\\__  \\[/red]",
+        "[red]  |/  \\/|_| \\_\\  /___/ /___/[/red]"
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 35,
+    "outer_width": 140,
+    "primary_color": "red"
+  },
+  "Basics": [
+    {
+      "command": "make",
+      "description": "Run default target (usually 'all')"
+    },
+    {
+      "command": "make target_name",
+      "description": "Run specific target"
+    },
+    {
+      "command": "make -f custom.mk",
+      "description": "Use custom Makefile"
+    }
+  ],
+  "Variables": [
+    {
+      "command": "make VAR=value target",
+      "description": "Pass variable to make"
+    },
+    {
+      "command": "make -e",
+      "description": "Use environment variables"
+    },
+    {
+      "command": "make --print-data-base",
+      "description": "Print all variables and rules"
+    }
+  ],
+  "Targets": [
+    {
+      "command": "make -n target",
+      "description": "Show commands without executing"
+    },
+    {
+      "command": "make -B target",
+      "description": "Force rebuild (ignore timestamps)"
+    },
+    {
+      "command": "make clean",
+      "description": "Run clean target (remove build files)"
+    }
+  ],
+  "Parallel Execution": [
+    {
+      "command": "make -j4",
+      "description": "Run 4 jobs in parallel"
+    },
+    {
+      "command": "make -j",
+      "description": "Run unlimited parallel jobs"
+    }
+  ],
+  "Debugging": [
+    {
+      "command": "make --debug=b",
+      "description": "Show basic debug info"
+    },
+    {
+      "command": "make -d",
+      "description": "Print detailed debug info"
+    },
+    {
+      "command": "make --version",
+      "description": "Show make version"
+    }
+  ],
+  "Common Targets": [
+    {
+      "command": "make build",
+      "description": "Build the project"
+    },
+    {
+      "command": "make test",
+      "description": "Run tests"
+    },
+    {
+      "command": "make install",
+      "description": "Install built binaries"
+    },
+    {
+      "command": "make uninstall",
+      "description": "Remove installed files"
+    }
+  ]
+}

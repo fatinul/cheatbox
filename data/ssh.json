@@ -1,0 +1,125 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[green]   ___  ___  __ __[/green]",
+        "[green]  / __\\(  _)(  (  )[/green]",
+        "[green] ( (__ ) _) )()( [/green]",
+        "[green]  \\___|(___)(__)(__)__ [/green]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "[green]   ___  ___  __  __[/green]",
+        "[green]  / __\\(  _)(  (  )[/green]",
+        "[green] ( (__ ) _) )()( [/green]",
+        "[green]  \\___|(___)(__)(__)__[/green]"
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 40,
+    "outer_width": 140,
+    "primary_color": "green"
+  },
+  "Connecting": [
+    {
+      "command": "ssh user@host",
+      "description": "Connect to remote server"
+    },
+    {
+      "command": "ssh -p 2222 user@host",
+      "description": "Connect on custom port"
+    },
+    {
+      "command": "ssh -i /path/to/key user@host",
+      "description": "Connect using specific key"
+    }
+  ],
+  "Key Management": [
+    {
+      "command": "ssh-keygen -t rsa -b 4096",
+      "description": "Generate new RSA SSH key"
+    },
+    {
+      "command": "ssh-keygen -t ed25519",
+      "description": "Generate ED25519 SSH key (recommended)"
+    },
+    {
+      "command": "ssh-copy-id -i ~/.ssh/id_rsa.pub user@host",
+      "description": "Copy public key to remote server"
+    }
+  ],
+  "Key Operations": [
+    {
+      "command": "ssh-keygen -l -f ~/.ssh/id_rsa.pub",
+      "description": "Show key fingerprint"
+    },
+    {
+      "command": "ssh-keygen -p -f ~/.ssh/id_rsa",
+      "description": "Change key passphrase"
+    },
+    {
+      "command": "ssh-keygen -R hostname",
+      "description": "Remove host from known_hosts"
+    }
+  ],
+  "SSH Agent": [
+    {
+      "command": "eval $(ssh-agent -s)",
+      "description": "Start SSH agent"
+    },
+    {
+      "command": "ssh-add ~/.ssh/id_rsa",
+      "description": "Add key to SSH agent"
+    },
+    {
+      "command": "ssh-add -l",
+      "description": "List keys in SSH agent"
+    },
+    {
+      "command": "ssh-add -D",
+      "description": "Remove all keys from agent"
+    }
+  ],
+  "File Transfer": [
+    {
+      "command": "scp file.txt user@host:/remote/path/",
+      "description": "Copy file to remote server"
+    },
+    {
+      "command": "scp user@host:/remote/file.txt .",
+      "description": "Copy file from remote server"
+    },
+    {
+      "command": "scp -r folder/ user@host:/remote/path/",
+      "description": "Copy directory recursively"
+    }
+  ],
+  "Tunneling": [
+    {
+      "command": "ssh -L 8080:localhost:80 user@host",
+      "description": "Local port forwarding"
+    },
+    {
+      "command": "ssh -R 8080:localhost:80 user@host",
+      "description": "Remote port forwarding"
+    },
+    {
+      "command": "ssh -D 1080 user@host",
+      "description": "Create SOCKS proxy"
+    }
+  ],
+  "Configuration": [
+    {
+      "command": "cat ~/.ssh/config",
+      "description": "Show SSH config"
+    },
+    {
+      "command": "ssh-keyscan -H host >> ~/.ssh/known_hosts",
+      "description": "Add host key to known_hosts"
+    }
+  ]
+}

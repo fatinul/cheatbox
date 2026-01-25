@@ -1,0 +1,103 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[green]    ___  _   _  ___  ___  _   _[/green]",
+        "[green]   / __|| | | |/ __||  _\\| | | |[/green]",
+        "[green]   \\__ \\| |_| |\\__ \\| |_ | |_| |[/green]",
+        "[green]   |___/\\__,_||___/|___/\\__,_/ [/green]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "[green]   ____  _   _  ____  ___  ___[/green]",
+        "[green]  / ___|| | | ||  _ \\/ __||  _|[/green]",
+        "[green] | |    | |_| ||__) |\\__ \\| |_[/green]",
+        "[green]  \\__| \\___/ |____/|___/|____|[/green]"
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 35,
+    "outer_width": 140,
+    "primary_color": "green"
+  },
+  "Running Commands": [
+    {
+      "command": "sudo command",
+      "description": "Run command as superuser"
+    },
+    {
+      "command": "sudo -u username command",
+      "description": "Run command as specific user"
+    },
+    {
+      "command": "sudo -E command",
+      "description": "Preserve environment variables"
+    }
+  ],
+  "Password Behavior": [
+    {
+      "command": "sudo -S command",
+      "description": "Read password from stdin"
+    },
+    {
+      "command": "sudo -i",
+      "description": "Interactive shell with login"
+    },
+    {
+      "command": "sudo -s",
+      "description": "Interactive shell without login"
+    }
+  ],
+  "Privileges": [
+    {
+      "command": "sudo -l",
+      "description": "List user's sudo permissions"
+    },
+    {
+      "command": "sudo -ll",
+      "description": "List with command details"
+    },
+    {
+      "command": "sudo -v",
+      "description": "Update sudo password timeout"
+    }
+  ],
+  "Multiple Commands": [
+    {
+      "command": "sudo command1 && sudo command2",
+      "description": "Run multiple commands sequentially"
+    },
+    {
+      "command": "sudo sh -c 'command1 && command2'",
+      "description": "Run multiple commands in one shell"
+    }
+  ],
+  "Configuration": [
+    {
+      "command": "sudo visudo",
+      "description": "Edit sudoers file (SAFE)"
+    },
+    {
+      "command": "sudo -k",
+      "description": "Invalidate sudo timestamp"
+    },
+    {
+      "command": "sudo -K",
+      "description": "Remove timestamp file"
+    }
+  ],
+  "Logging": [
+    {
+      "command": "sudo journalctl --user=sudo",
+      "description": "View sudo logs"
+    },
+    {
+      "command": "sudo tail -f /var/log/auth.log",
+      "description": "Monitor authentication logs"
+    }
+  ]
+}

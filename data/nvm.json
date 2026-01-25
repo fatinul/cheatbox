@@ -1,0 +1,105 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[green]    ____   ____   ____   __  __[/green]",
+        "[green]   / __ \\ / __ \\ |  _ \\ / / / /[/green]",
+        "[green]  / / / // /_/ / | | | |\\/ \\/ [/green]",
+        "[green] / /_/ //  __/  | |_| |   /   [/green]",
+        "[green] \\____/ /_/     |____/   /    [/green]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "[green]    ____   ___  ____  _   _  __ __[/green]",
+        "[green]   / __ \\ / _ \\|  _ \\| | | |/ _` |[/green]",
+        "[green]  / / / // / / | | | | | | | (_| |[/green]",
+        "[green] / /_/ /| \\_/ | |_| | |_| | |_,_|[/green]",
+        "[green]  \\____/  \\___/|____/ \\__/  \\__,_|[/green]"
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 35,
+    "outer_width": 140,
+    "primary_color": "green"
+  },
+  "Version Management": [
+    {
+      "command": "nvm --version",
+      "description": "Show NVM version"
+    },
+    {
+      "command": "nvm list",
+      "description": "List installed Node versions"
+    },
+    {
+      "command": "nvm list-remote",
+      "description": "List available Node versions"
+    }
+  ],
+  "Installation": [
+    {
+      "command": "nvm install node",
+      "description": "Install latest Node.js"
+    },
+    {
+      "command": "nvm install 18.16.0",
+      "description": "Install specific version"
+    },
+    {
+      "command": "nvm install 18",
+      "description": "Install latest from major version"
+    },
+    {
+      "command": "nvm install --lts",
+      "description": "Install latest LTS version"
+    }
+  ],
+  "Switching Versions": [
+    {
+      "command": "nvm use 18.16.0",
+      "description": "Switch to specific version"
+    },
+    {
+      "command": "nvm use node",
+      "description": "Use latest version"
+    },
+    {
+      "command": "nvm use --lts",
+      "description": "Use latest LTS"
+    }
+  ],
+  "Default Version": [
+    {
+      "command": "nvm alias default 18.16.0",
+      "description": "Set default Node version"
+    },
+    {
+      "command": "nvm alias default node",
+      "description": "Use latest as default"
+    }
+  ],
+  "Uninstall": [
+    {
+      "command": "nvm uninstall 18.16.0",
+      "description": "Remove a Node version"
+    },
+    {
+      "command": "nvm uninstall node",
+      "description": "Uninstall latest version"
+    }
+  ],
+  "Aliases": [
+    {
+      "command": "nvm alias myalias 18.16.0",
+      "description": "Create custom alias"
+    },
+    {
+      "command": "nvm alias",
+      "description": "List all aliases"
+    }
+  ]
+}
