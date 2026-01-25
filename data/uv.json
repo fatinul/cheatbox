@@ -2,22 +2,23 @@
   "LOGO": [
     {
       "ascii": [
-        "[magenta]     _    _   __[/magenta]",
-        "[magenta]    | |  | | / /[/magenta]",
-        "[magenta]    | |  | |/ / [/magenta]",
-        "[magenta]    | |  |   <  [/magenta]",
-        "[magenta]    |_|  |_|\\_\\ [/magenta]"
+        "[magenta]  ██╗   ██╗██╗   ██╗[/magenta]",
+        "[magenta]  ██║   ██║██║   ██║[/magenta]",
+        "[magenta]  ██║   ██║██║   ██║[/magenta]",
+        "[magenta]  ██║   ██║╚██╗ ██╔╝[/magenta]",
+        "[magenta]  ╚██████╔╝ ╚████╔╝ [/magenta]",
+        "[magenta]   ╚═════╝   ╚═══╝  [/magenta]"
       ]
     }
   ],
   "TITLE": [
     {
       "ascii": [
-        "  _   _  __   ___   __    ",
-        " | | | |/ /  / __| /  \\   ",
-        " | |_| /  \\ | (__ |    |  ",
-        "  \\___/_/\\_\\ \\___||_/\\_\\ ",
-        "                        "
+        "  _   ___   __",
+        " | | | \\ \\ / /",
+        " | | | |\\ V / ",
+        " | |_| | | |  ",
+        "  \\___/  |_|  "
       ]
     }
   ],
