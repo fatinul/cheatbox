@@ -1,0 +1,128 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[cyan]  ██████╗  ██████╗ [/cyan]",
+        "[cyan] ██╔════╝ ██╔═══██╗[/cyan]",
+        "[cyan] ██║  ███╗██║   ██║[/cyan]",
+        "[cyan] ██║   ██║██║   ██║[/cyan]",
+        "[cyan] ╚██████╔╝╚██████╔╝[/cyan]",
+        "[cyan]  ╚═════╝  ╚═════╝ [/cyan]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "   ____       ",
+        "  / ___| ___  ",
+        " | |  _ / _ \\ ",
+        " | |_| | (_) |",
+        "  \\____|\\___/ "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 35,
+    "outer_width": 140,
+    "primary_color": "blue"
+  },
+  "Compilation": [
+    {
+      "command": "go build",
+      "description": "Build the current package"
+    },
+    {
+      "command": "go build -o binary_name",
+      "description": "Build with custom output name"
+    },
+    {
+      "command": "go build ./cmd/app",
+      "description": "Build from subdirectory"
+    }
+  ],
+  "Running Code": [
+    {
+      "command": "go run main.go",
+      "description": "Compile and run a Go file"
+    },
+    {
+      "command": "go run ./cmd/app",
+      "description": "Run from subdirectory"
+    }
+  ],
+  "Module Management": [
+    {
+      "command": "go mod init github.com/user/project",
+      "description": "Initialize a new Go module"
+    },
+    {
+      "command": "go mod tidy",
+      "description": "Clean up unused dependencies"
+    },
+    {
+      "command": "go mod download",
+      "description": "Download module dependencies"
+    },
+    {
+      "command": "go list -m all",
+      "description": "List all dependencies"
+    }
+  ],
+  "Dependency Management": [
+    {
+      "command": "go get github.com/user/package",
+      "description": "Fetch and add a package"
+    },
+    {
+      "command": "go get -u github.com/user/package",
+      "description": "Update a package to latest version"
+    },
+    {
+      "command": "go get github.com/user/package@v1.2.3",
+      "description": "Get specific version"
+    }
+  ],
+  "Testing": [
+    {
+      "command": "go test",
+      "description": "Run tests in current package"
+    },
+    {
+      "command": "go test ./...",
+      "description": "Run tests in all packages"
+    },
+    {
+      "command": "go test -v",
+      "description": "Verbose test output"
+    },
+    {
+      "command": "go test -cover",
+      "description": "Show test coverage"
+    }
+  ],
+  "Code Quality": [
+    {
+      "command": "go fmt ./...",
+      "description": "Format all Go files"
+    },
+    {
+      "command": "go vet ./...",
+      "description": "Analyze code for errors"
+    },
+    {
+      "command": "golint ./...",
+      "description": "Lint code (requires golint)"
+    }
+  ],
+  "Installation": [
+    {
+      "command": "go install github.com/user/app@latest",
+      "description": "Install a Go binary"
+    },
+    {
+      "command": "go install ./cmd/app",
+      "description": "Install from local source"
+    }
+  ]
+}

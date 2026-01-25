@@ -1,0 +1,139 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[red]  ██████╗ █████╗ ██████╗  ██████╗  ██████╗ [/red]",
+        "[red] ██╔════╝██╔══██╗██╔══██╗██╔════╝ ██╔═══██╗[/red]",
+        "[red] ██║     ███████║██████╔╝██║  ███╗██║   ██║[/red]",
+        "[red] ██║     ██╔══██║██╔══██╗██║   ██║██║   ██║[/red]",
+        "[red] ╚██████╗██║  ██║██║  ██║╚██████╔╝╚██████╔╝[/red]",
+        "[red]  ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ [/red]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "   ____                       ",
+        "  / ___|__ _ _ __ __ _  ___   ",
+        " | |   / _` | '__/ _` |/ _ \\  ",
+        " | |__| (_| | | | (_| | (_) | ",
+        "  \\____\\__,_|_|  \\__, |\\___/  ",
+        "                 |___/        "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 35,
+    "outer_width": 140,
+    "primary_color": "red"
+  },
+  "Project Setup": [
+    {
+      "command": "cargo new project_name",
+      "description": "Create a new Rust project"
+    },
+    {
+      "command": "cargo new --lib project_name",
+      "description": "Create a new Rust library"
+    },
+    {
+      "command": "cargo init",
+      "description": "Initialize Cargo in current directory"
+    }
+  ],
+  "Building": [
+    {
+      "command": "cargo build",
+      "description": "Build debug binary"
+    },
+    {
+      "command": "cargo build --release",
+      "description": "Build optimized release binary"
+    },
+    {
+      "command": "cargo build --target wasm32-unknown-unknown",
+      "description": "Build for specific target"
+    }
+  ],
+  "Running": [
+    {
+      "command": "cargo run",
+      "description": "Build and run the project"
+    },
+    {
+      "command": "cargo run --release",
+      "description": "Build and run optimized"
+    },
+    {
+      "command": "cargo run -- --arg1 --arg2",
+      "description": "Pass arguments to binary"
+    }
+  ],
+  "Dependency Management": [
+    {
+      "command": "cargo add package_name",
+      "description": "Add a dependency"
+    },
+    {
+      "command": "cargo add --dev package_name",
+      "description": "Add dev dependency"
+    },
+    {
+      "command": "cargo remove package_name",
+      "description": "Remove a dependency"
+    },
+    {
+      "command": "cargo update",
+      "description": "Update dependencies"
+    }
+  ],
+  "Code Quality": [
+    {
+      "command": "cargo check",
+      "description": "Check code for errors (fast)"
+    },
+    {
+      "command": "cargo fmt",
+      "description": "Format code"
+    },
+    {
+      "command": "cargo clippy",
+      "description": "Lint code (requires clippy)"
+    }
+  ],
+  "Testing": [
+    {
+      "command": "cargo test",
+      "description": "Run all tests"
+    },
+    {
+      "command": "cargo test test_name",
+      "description": "Run specific test"
+    },
+    {
+      "command": "cargo test -- --test-threads=1",
+      "description": "Run tests sequentially"
+    }
+  ],
+  "Documentation": [
+    {
+      "command": "cargo doc --open",
+      "description": "Generate and open documentation"
+    },
+    {
+      "command": "cargo doc --no-deps",
+      "description": "Generate docs (exclude dependencies)"
+    }
+  ],
+  "Publishing": [
+    {
+      "command": "cargo publish",
+      "description": "Publish to crates.io"
+    },
+    {
+      "command": "cargo publish --dry-run",
+      "description": "Simulate publishing"
+    }
+  ]
+}

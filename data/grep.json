@@ -1,0 +1,101 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[green]  ██████╗ ██████╗ ███████╗██████╗ [/green]",
+        "[green] ██╔════╝ ██╔══██╗██╔════╝██╔══██╗[/green]",
+        "[green] ██║  ███╗██████╔╝█████╗  ██████╔╝[/green]",
+        "[green] ██║   ██║██╔══██╗██╔══╝  ██╔═══╝ [/green]",
+        "[green] ╚██████╔╝██║  ██║███████╗██║     [/green]",
+        "[green]  ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝     [/green]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "   ____                 ",
+        "  / ___|_ __ ___ _ __   ",
+        " | |  _| '__/ _ \\ '_ \\  ",
+        " | |_| | | |  __/ |_) | ",
+        "  \\____|_|  \\___| .__/  ",
+        "                |_|     "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 35,
+    "outer_width": 140,
+    "primary_color": "blue"
+  },
+  "Text Search": [
+    {
+      "command": "grep 'pattern' file.txt",
+      "description": "Search for pattern in file"
+    },
+    {
+      "command": "grep -i 'pattern' file.txt",
+      "description": "Case-insensitive search"
+    },
+    {
+      "command": "grep -n 'pattern' file.txt",
+      "description": "Show line numbers"
+    }
+  ],
+  "Extended Patterns": [
+    {
+      "command": "grep -E 'regex|pattern' file.txt",
+      "description": "Use extended regex"
+    },
+    {
+      "command": "grep -P 'perl_regex' file.txt",
+      "description": "Use Perl regex patterns"
+    }
+  ],
+  "Search Scope": [
+    {
+      "command": "grep -r 'pattern' /path/to/dir",
+      "description": "Recursive search in directory"
+    },
+    {
+      "command": "grep -l 'pattern' *.txt",
+      "description": "Show only filenames"
+    },
+    {
+      "command": "grep -c 'pattern' file.txt",
+      "description": "Count matching lines"
+    }
+  ],
+  "Filtering": [
+    {
+      "command": "grep -v 'pattern' file.txt",
+      "description": "Invert match (show non-matching)"
+    },
+    {
+      "command": "grep -A 3 'pattern' file.txt",
+      "description": "Show 3 lines after match"
+    },
+    {
+      "command": "grep -B 3 'pattern' file.txt",
+      "description": "Show 3 lines before match"
+    },
+    {
+      "command": "grep -C 2 'pattern' file.txt",
+      "description": "Show 2 lines context (before & after)"
+    }
+  ],
+  "Advanced": [
+    {
+      "command": "grep -w 'word' file.txt",
+      "description": "Match whole words only"
+    },
+    {
+      "command": "grep '^pattern' file.txt",
+      "description": "Match at start of line"
+    },
+    {
+      "command": "grep 'pattern$' file.txt",
+      "description": "Match at end of line"
+    }
+  ]
+}

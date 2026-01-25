@@ -1,0 +1,109 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[magenta] ███████╗██╗   ██╗███████╗████████╗███████╗███╗   ███╗[/magenta]",
+        "[magenta] ██╔════╝╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔════╝████╗ ████║[/magenta]",
+        "[magenta] ███████╗ ╚████╔╝ ███████╗   ██║   █████╗  ██╔████╔██║[/magenta]",
+        "[magenta] ╚════██║  ╚██╔╝  ╚════██║   ██║   ██╔══╝  ██║╚██╔╝██║[/magenta]",
+        "[magenta] ███████║   ██║   ███████║   ██║   ███████╗██║ ╚═╝ ██║[/magenta]",
+        "[magenta] ╚══════╝   ╚═╝   ╚══════╝   ╚═╝   ╚══════╝╚═╝     ╚═╝[/magenta]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "  ____            _                     _   _ ",
+        " / ___| _   _ ___| |_ ___ _ __ ___   __| | | |",
+        " \\___ \\| | | / __| __/ _ \\ '_ ` _ \\ / _` | | |",
+        "  ___) | |_| \\__ \\ ||  __/ | | | | | (_| | |_|",
+        " |____/ \\__, |___/\\__\\___|_| |_| |_|\\__,_| (_)",
+        "        |___/                                 "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 35,
+    "outer_width": 140,
+    "primary_color": "magenta"
+  },
+  "Service Management": [
+    {
+      "command": "systemctl start service_name",
+      "description": "Start a service"
+    },
+    {
+      "command": "systemctl stop service_name",
+      "description": "Stop a service"
+    },
+    {
+      "command": "systemctl restart service_name",
+      "description": "Restart a service"
+    },
+    {
+      "command": "systemctl reload service_name",
+      "description": "Reload service configuration"
+    }
+  ],
+  "Service Status": [
+    {
+      "command": "systemctl status service_name",
+      "description": "Show service status"
+    },
+    {
+      "command": "systemctl is-active service_name",
+      "description": "Check if service is active"
+    },
+    {
+      "command": "systemctl is-enabled service_name",
+      "description": "Check if service is enabled"
+    }
+  ],
+  "Enabling & Disabling": [
+    {
+      "command": "systemctl enable service_name",
+      "description": "Enable service on boot"
+    },
+    {
+      "command": "systemctl disable service_name",
+      "description": "Disable service on boot"
+    },
+    {
+      "command": "systemctl unmask service_name",
+      "description": "Unmask a masked service"
+    },
+    {
+      "command": "systemctl mask service_name",
+      "description": "Prevent service from being started"
+    }
+  ],
+  "Listing Services": [
+    {
+      "command": "systemctl list-units --type=service",
+      "description": "List all services"
+    },
+    {
+      "command": "systemctl list-units --type=service --state=running",
+      "description": "List running services"
+    },
+    {
+      "command": "systemctl list-unit-files --type=service",
+      "description": "List service files"
+    }
+  ],
+  "Troubleshooting": [
+    {
+      "command": "systemctl show service_name",
+      "description": "Show detailed service info"
+    },
+    {
+      "command": "journalctl -u service_name",
+      "description": "View service logs"
+    },
+    {
+      "command": "journalctl -u service_name -f",
+      "description": "Follow service logs in real-time"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[magenta] ██████╗ ██╗   ██╗[/magenta]",
+        "[magenta] ██╔══██╗██║   ██║[/magenta]",
+        "[magenta] ██║  ██║██║   ██║[/magenta]",
+        "[magenta] ██║  ██║██║   ██║[/magenta]",
+        "[magenta] ██████╔╝╚██████╔╝[/magenta]",
+        "[magenta] ╚═════╝  ╚═════╝ [/magenta]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "      _       ",
+        "   __| |_   _ ",
+        "  / _` | | | |",
+        " | (_| | |_| |",
+        "  \\__,_|\\__,_|"
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 35,
+    "outer_width": 140,
+    "primary_color": "magenta"
+  },
+  "Basic Commands": [
+    {
+      "command": "du -sh directory/",
+      "description": "Show directory size (human-readable)"
+    },
+    {
+      "command": "du -ah directory/",
+      "description": "Show size of all files"
+    },
+    {
+      "command": "du -sh .*",
+      "description": "Show sizes of hidden directories"
+    }
+  ],
+  "Disk Usage": [
+    {
+      "command": "df -h",
+      "description": "Show disk space usage"
+    },
+    {
+      "command": "df -i",
+      "description": "Show inode usage"
+    },
+    {
+      "command": "df -T",
+      "description": "Show filesystem type"
+    }
+  ],
+  "Finding Large Files": [
+    {
+      "command": "du -sh /* | sort -rh",
+      "description": "Find largest directories"
+    },
+    {
+      "command": "find . -type f -size +100M -exec ls -lh {} \\;",
+      "description": "Find files larger than 100MB"
+    }
+  ],
+  "Sorting & Reporting": [
+    {
+      "command": "du -sh */ | sort -h",
+      "description": "Sort directories by size"
+    },
+    {
+      "command": "du --max-depth=2 -h",
+      "description": "Show size up to 2 levels deep"
+    }
+  ],
+  "Excluding Paths": [
+    {
+      "command": "du -sh --exclude='*.log' directory/",
+      "description": "Exclude file pattern"
+    },
+    {
+      "command": "du -sh --exclude='.git' directory/",
+      "description": "Exclude directory"
+    }
+  ]
+}

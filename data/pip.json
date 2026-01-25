@@ -1,0 +1,141 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[yellow] ██████╗ ██╗██████╗ [/yellow]",
+        "[yellow] ██╔══██╗██║██╔══██╗[/yellow]",
+        "[yellow] ██████╔╝██║██████╔╝[/yellow]",
+        "[yellow] ██╔═══╝ ██║██╔═══╝ [/yellow]",
+        "[yellow] ██║     ██║██║     [/yellow]",
+        "[yellow] ╚═╝     ╚═╝╚═╝     [/yellow]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "  ____  _       ",
+        " |  _ \\(_)_ __  ",
+        " | |_) | | '_ \\ ",
+        " |  __/| | |_) |",
+        " |_|   |_| .__/ ",
+        "         |_|    "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 30,
+    "outer_width": 140,
+    "primary_color": "blue"
+  },
+  "Installation & Upgrades": [
+    {
+      "command": "pip install package_name",
+      "description": "Install a package from PyPI"
+    },
+    {
+      "command": "pip install package_name==1.2.3",
+      "description": "Install a specific version"
+    },
+    {
+      "command": "pip install --upgrade pip",
+      "description": "Upgrade pip itself"
+    },
+    {
+      "command": "pip install -r requirements.txt",
+      "description": "Install packages from requirements file"
+    }
+  ],
+  "Package Management": [
+    {
+      "command": "pip list",
+      "description": "List installed packages"
+    },
+    {
+      "command": "pip show package_name",
+      "description": "Show package information"
+    },
+    {
+      "command": "pip search package_name",
+      "description": "Search PyPI for packages"
+    },
+    {
+      "command": "pip uninstall package_name",
+      "description": "Remove a package"
+    }
+  ],
+  "Version Management": [
+    {
+      "command": "pip install 'package_name>=1.0,<2.0'",
+      "description": "Install with version range"
+    },
+    {
+      "command": "pip index versions package_name",
+      "description": "List available versions of a package"
+    },
+    {
+      "command": "pip install --upgrade package_name",
+      "description": "Update package to latest version"
+    }
+  ],
+  "Requirements Files": [
+    {
+      "command": "pip freeze > requirements.txt",
+      "description": "Generate requirements file from current environment"
+    },
+    {
+      "command": "pip install -r requirements.txt",
+      "description": "Install from requirements file"
+    },
+    {
+      "command": "pip install -r requirements-dev.txt",
+      "description": "Install development requirements"
+    }
+  ],
+  "Virtual Environments": [
+    {
+      "command": "python -m venv myenv",
+      "description": "Create a virtual environment"
+    },
+    {
+      "command": "source myenv/bin/activate",
+      "description": "Activate venv (Linux/macOS)"
+    },
+    {
+      "command": "myenv\\Scripts\\activate",
+      "description": "Activate venv (Windows)"
+    },
+    {
+      "command": "deactivate",
+      "description": "Deactivate virtual environment"
+    }
+  ],
+  "Package Inspection": [
+    {
+      "command": "pip show -f package_name",
+      "description": "Show package files"
+    },
+    {
+      "command": "pip check",
+      "description": "Check for broken dependencies"
+    },
+    {
+      "command": "pip cache info",
+      "description": "Show pip cache information"
+    }
+  ],
+  "Advanced": [
+    {
+      "command": "pip install -e .",
+      "description": "Install package in editable mode"
+    },
+    {
+      "command": "pip install git+https://github.com/user/repo.git",
+      "description": "Install from Git repository"
+    },
+    {
+      "command": "pip install --force-reinstall package_name",
+      "description": "Force reinstall a package"
+    }
+  ]
+}

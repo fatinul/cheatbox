@@ -1,0 +1,124 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[blue]  █████╗ ███████╗██████╗ ███████╗[/blue]",
+        "[blue] ██╔══██╗██╔════╝██╔══██╗██╔════╝[/blue]",
+        "[blue] ███████║███████╗██║  ██║█████╗  [/blue]",
+        "[blue] ██╔══██║╚════██║██║  ██║██╔══╝  [/blue]",
+        "[blue] ██║  ██║███████║██████╔╝██║     [/blue]",
+        "[blue] ╚═╝  ╚═╝╚══════╝╚═════╝ ╚═╝     [/blue]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "                _  __ ",
+        "   __ _ ___  __| |/ _|",
+        "  / _` / __|/ _` | |_ ",
+        " | (_| \\__ \\ (_| |  _|",
+        "  \\__,_|___/\\__,_|_|  "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 40,
+    "outer_width": 140,
+    "primary_color": "blue"
+  },
+  "Installation": [
+    {
+      "command": "git clone https://github.com/asdf-vm/asdf.git ~/.asdf",
+      "description": "Clone asdf to home directory"
+    },
+    {
+      "command": "asdf --version",
+      "description": "Show asdf version"
+    }
+  ],
+  "Plugins": [
+    {
+      "command": "asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git",
+      "description": "Add a plugin"
+    },
+    {
+      "command": "asdf plugin list",
+      "description": "List installed plugins"
+    },
+    {
+      "command": "asdf plugin list all",
+      "description": "List available plugins"
+    },
+    {
+      "command": "asdf plugin remove nodejs",
+      "description": "Remove a plugin"
+    }
+  ],
+  "Version Management": [
+    {
+      "command": "asdf list",
+      "description": "List installed versions"
+    },
+    {
+      "command": "asdf list nodejs",
+      "description": "List installed versions of plugin"
+    },
+    {
+      "command": "asdf list all nodejs",
+      "description": "List available versions"
+    }
+  ],
+  "Installation & Switching": [
+    {
+      "command": "asdf install nodejs 18.16.0",
+      "description": "Install specific version"
+    },
+    {
+      "command": "asdf install nodejs latest",
+      "description": "Install latest version"
+    },
+    {
+      "command": "asdf global nodejs 18.16.0",
+      "description": "Set global version"
+    },
+    {
+      "command": "asdf local nodejs 18.16.0",
+      "description": "Set local version (.tool-versions)"
+    }
+  ],
+  "Versions": [
+    {
+      "command": "asdf current",
+      "description": "Show current versions"
+    },
+    {
+      "command": "asdf current nodejs",
+      "description": "Show current version of tool"
+    }
+  ],
+  "Updates": [
+    {
+      "command": "asdf update",
+      "description": "Update asdf itself"
+    },
+    {
+      "command": "asdf plugin update nodejs",
+      "description": "Update plugin"
+    },
+    {
+      "command": "asdf plugin update --all",
+      "description": "Update all plugins"
+    }
+  ],
+  "Cleanup": [
+    {
+      "command": "asdf uninstall nodejs 18.16.0",
+      "description": "Remove specific version"
+    },
+    {
+      "command": "asdf reshim",
+      "description": "Rebuild shims"
+    }
+  ]
+}

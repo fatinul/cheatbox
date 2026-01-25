@@ -1,0 +1,114 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[cyan] ███████╗ █████╗ ███████╗████████╗[/cyan]",
+        "[cyan] ██╔════╝██╔══██╗██╔════╝╚══██╔══╝[/cyan]",
+        "[cyan] █████╗  ███████║███████╗   ██║   [/cyan]",
+        "[cyan] ██╔══╝  ██╔══██║╚════██║   ██║   [/cyan]",
+        "[cyan] ██║     ██║  ██║███████║   ██║   [/cyan]",
+        "[cyan] ╚═╝     ╚═╝  ╚═╝╚══════╝   ╚═╝   [/cyan]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "  _____          _    __      _       _     ",
+        " |  ___|_ _ ___| |_ / _| ___| |_ ___| |__  ",
+        " | |_ / _` / __| __| |_ / _ \\ __/ __| '_ \\ ",
+        " |  _| (_| \\__ \\ |_|  _|  __/ || (__| | | |",
+        " |_|  \\__,_|___/\\__|_|  \\___|\\__\\___|_| |_|"
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 25,
+    "outer_width": 140,
+    "primary_color": "green"
+  },
+  "Basic Info": [
+    {
+      "command": "fastfetch",
+      "description": "Display full system information with logo"
+    },
+    {
+      "command": "fastfetch --help",
+      "description": "Show all available options"
+    },
+    {
+      "command": "fastfetch --version",
+      "description": "Show fastfetch version"
+    }
+  ],
+  "Configuration": [
+    {
+      "command": "fastfetch --config /path/to/config.json",
+      "description": "Use a custom configuration file"
+    },
+    {
+      "command": "fastfetch --config none",
+      "description": "Ignore all configuration files"
+    },
+    {
+      "command": "mkdir -p ~/.config/fastfetch",
+      "description": "Create config directory"
+    }
+  ],
+  "Output Customization": [
+    {
+      "command": "fastfetch --logo none",
+      "description": "Hide the logo"
+    },
+    {
+      "command": "fastfetch --logo small",
+      "description": "Show smaller logo"
+    },
+    {
+      "command": "fastfetch --logo-width 30",
+      "description": "Set logo width in characters"
+    },
+    {
+      "command": "fastfetch --color-keys blue",
+      "description": "Change label color"
+    }
+  ],
+  "Module Selection": [
+    {
+      "command": "fastfetch --modules os host cpu memory",
+      "description": "Show specific modules only"
+    },
+    {
+      "command": "fastfetch --modules all",
+      "description": "Show all available modules"
+    },
+    {
+      "command": "fastfetch --show cpu memory gpu disk",
+      "description": "Display selected modules"
+    }
+  ],
+  "Output Formats": [
+    {
+      "command": "fastfetch -o json",
+      "description": "Output as JSON"
+    },
+    {
+      "command": "fastfetch -o csv",
+      "description": "Output as CSV"
+    },
+    {
+      "command": "fastfetch --no-color",
+      "description": "Disable colored output"
+    }
+  ],
+  "Screen Modes": [
+    {
+      "command": "fastfetch --screen-height 30",
+      "description": "Set terminal height for display"
+    },
+    {
+      "command": "fastfetch --screen-width 80",
+      "description": "Set terminal width for display"
+    }
+  ]
+}

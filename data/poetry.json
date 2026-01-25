@@ -1,0 +1,123 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[cyan] ██████╗  ██████╗ ███████╗████████╗██████╗ ██╗   ██╗[/cyan]",
+        "[cyan] ██╔══██╗██╔═══██╗██╔════╝╚══██╔══╝██╔══██╗╚██╗ ██╔╝[/cyan]",
+        "[cyan] ██████╔╝██║   ██║█████╗     ██║   ██████╔╝ ╚████╔╝ [/cyan]",
+        "[cyan] ██╔═══╝ ██║   ██║██╔══╝     ██║   ██╔══██╗  ╚██╔╝  [/cyan]",
+        "[cyan] ██║     ╚██████╔╝███████╗   ██║   ██║  ██║   ██║   [/cyan]",
+        "[cyan] ╚═╝      ╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝   [/cyan]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "  ____            _              ",
+        " |  _ \\ ___   ___| |_ _ __ _   _ ",
+        " | |_) / _ \\ / _ \\ __| '__| | | |",
+        " |  __/ (_) |  __/ |_| |  | |_| |",
+        " |_|   \\___/ \\___|\\__|_|   \\__, |",
+        "                           |___/ "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 35,
+    "outer_width": 140,
+    "primary_color": "cyan"
+  },
+  "Project Setup": [
+    {
+      "command": "poetry new project_name",
+      "description": "Create a new poetry project with structure"
+    },
+    {
+      "command": "poetry init",
+      "description": "Initialize poetry in current directory"
+    },
+    {
+      "command": "poetry config --list",
+      "description": "Show all poetry configurations"
+    }
+  ],
+  "Dependency Management": [
+    {
+      "command": "poetry add package_name",
+      "description": "Add a dependency to the project"
+    },
+    {
+      "command": "poetry add --group dev pytest black",
+      "description": "Add dev dependencies"
+    },
+    {
+      "command": "poetry add 'package_name>=1.0,<2.0'",
+      "description": "Add with version constraints"
+    },
+    {
+      "command": "poetry remove package_name",
+      "description": "Remove a dependency"
+    }
+  ],
+  "Virtual Environments": [
+    {
+      "command": "poetry install",
+      "description": "Install dependencies from poetry.lock"
+    },
+    {
+      "command": "poetry install --no-dev",
+      "description": "Install without dev dependencies"
+    },
+    {
+      "command": "poetry env use python3.10",
+      "description": "Use specific Python version"
+    },
+    {
+      "command": "poetry env info",
+      "description": "Show virtual environment info"
+    }
+  ],
+  "Running Code": [
+    {
+      "command": "poetry run python script.py",
+      "description": "Run command in poetry environment"
+    },
+    {
+      "command": "poetry shell",
+      "description": "Activate poetry shell"
+    }
+  ],
+  "Lock & Update": [
+    {
+      "command": "poetry update",
+      "description": "Update all dependencies"
+    },
+    {
+      "command": "poetry update package_name",
+      "description": "Update specific package"
+    },
+    {
+      "command": "poetry lock",
+      "description": "Generate lock file"
+    },
+    {
+      "command": "poetry show",
+      "description": "Show installed packages"
+    }
+  ],
+  "Building & Publishing": [
+    {
+      "command": "poetry build",
+      "description": "Build distribution packages"
+    },
+    {
+      "command": "poetry publish",
+      "description": "Publish to PyPI"
+    },
+    {
+      "command": "poetry publish -r test",
+      "description": "Publish to test repository"
+    }
+  ]
+}

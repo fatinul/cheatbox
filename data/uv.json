@@ -1,0 +1,110 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[magenta]  ██╗   ██╗██╗   ██╗[/magenta]",
+        "[magenta]  ██║   ██║██║   ██║[/magenta]",
+        "[magenta]  ██║   ██║██║   ██║[/magenta]",
+        "[magenta]  ██║   ██║╚██╗ ██╔╝[/magenta]",
+        "[magenta]  ╚██████╔╝ ╚████╔╝ [/magenta]",
+        "[magenta]   ╚═════╝   ╚═══╝  [/magenta]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "  _   ___   __",
+        " | | | \\ \\ / /",
+        " | | | |\\ V / ",
+        " | |_| | | |  ",
+        "  \\___/  |_|  "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 30,
+    "outer_width": 140,
+    "primary_color": "magenta"
+  },
+  "Project Initialization": [
+    {
+      "command": "uv init",
+      "description": "Initialize a new Python project"
+    },
+    {
+      "command": "uv init --package",
+      "description": "Initialize a new Python package"
+    },
+    {
+      "command": "uv init --name myproject",
+      "description": "Initialize with a specific project name"
+    }
+  ],
+  "Virtual Environments": [
+    {
+      "command": "uv venv",
+      "description": "Create a virtual environment in the current directory"
+    },
+    {
+      "command": "uv venv .venv",
+      "description": "Create a virtual environment at a specific path"
+    },
+    {
+      "command": "source .venv/bin/activate",
+      "description": "Activate the virtual environment (Linux/macOS)"
+    },
+    {
+      "command": ".venv\\Scripts\\activate",
+      "description": "Activate the virtual environment (Windows)"
+    }
+  ],
+  "Dependency Management": [
+    {
+      "command": "uv add requests numpy",
+      "description": "Add dependencies to the project"
+    },
+    {
+      "command": "uv add --dev pytest ruff",
+      "description": "Add development dependencies"
+    },
+    {
+      "command": "uv remove package_name",
+      "description": "Remove a dependency from the project"
+    },
+    {
+      "command": "uv lock",
+      "description": "Generate or update the lock file"
+    }
+  ],
+  "Dependency Installation": [
+    {
+      "command": "uv sync",
+      "description": "Sync dependencies from lock file"
+    },
+    {
+      "command": "uv pip install package_name",
+      "description": "Install packages with pip-like interface"
+    }
+  ],
+  "Running Code": [
+    {
+      "command": "uv run python script.py",
+      "description": "Run a Python script with project dependencies"
+    },
+    {
+      "command": "uv run mycommand",
+      "description": "Run a command script defined in pyproject.toml"
+    }
+  ],
+  "Building & Publishing": [
+    {
+      "command": "uv build",
+      "description": "Build the project distribution"
+    },
+    {
+      "command": "uv publish",
+      "description": "Publish the project to PyPI"
+    }
+  ]
+}

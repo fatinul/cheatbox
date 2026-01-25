@@ -1,0 +1,189 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[red]     ██████╗ ██╗████████╗[/red]",
+        "[red]    ██╔════╝ ██║╚══██╔══╝[/red]",
+        "[red]    ██║  ███╗██║   ██║   [/red]",
+        "[red]    ██║   ██║██║   ██║   [/red]",
+        "[red]    ╚██████╔╝██║   ██║   [/red]",
+        "[red]     ╚═════╝ ╚═╝   ╚═╝   [/red]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "   _____ _ _   ",
+        "  / ____(_) |  ",
+        " | |  __ _| |_ ",
+        " | | |_ | | __|",
+        " | |__| | | |_ ",
+        "  \\_____|_|\\__|"
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 35,
+    "outer_width": 140,
+    "primary_color": "yellow"
+  },
+  "Setup & Configuration": [
+    {
+      "command": "git config --global user.name 'Your Name'",
+      "description": "Set your global git username"
+    },
+    {
+      "command": "git config --global user.email 'your@email.com'",
+      "description": "Set your global git email"
+    },
+    {
+      "command": "git config --global core.editor vim",
+      "description": "Set default text editor"
+    },
+    {
+      "command": "git config --list",
+      "description": "Show all git configurations"
+    }
+  ],
+  "Repository Basics": [
+    {
+      "command": "git init",
+      "description": "Initialize a new git repository"
+    },
+    {
+      "command": "git clone <url>",
+      "description": "Clone a remote repository"
+    },
+    {
+      "command": "git status",
+      "description": "Show working tree status"
+    }
+  ],
+  "Staging & Committing": [
+    {
+      "command": "git add <file>",
+      "description": "Stage a specific file"
+    },
+    {
+      "command": "git add .",
+      "description": "Stage all changes"
+    },
+    {
+      "command": "git commit -m 'message'",
+      "description": "Commit staged changes"
+    },
+    {
+      "command": "git commit -am 'message'",
+      "description": "Stage and commit tracked files"
+    }
+  ],
+  "Branching": [
+    {
+      "command": "git branch",
+      "description": "List local branches"
+    },
+    {
+      "command": "git branch -a",
+      "description": "List all branches (local and remote)"
+    },
+    {
+      "command": "git branch <branch>",
+      "description": "Create a new branch"
+    },
+    {
+      "command": "git switch <branch>",
+      "description": "Switch to a branch"
+    },
+    {
+      "command": "git checkout -b <branch>",
+      "description": "Create and switch to new branch"
+    }
+  ],
+  "Remote Repository": [
+    {
+      "command": "git remote -v",
+      "description": "Show remote repositories"
+    },
+    {
+      "command": "git remote add origin <url>",
+      "description": "Add a remote repository"
+    },
+    {
+      "command": "git push origin main",
+      "description": "Push commits to remote"
+    },
+    {
+      "command": "git pull origin main",
+      "description": "Fetch and merge remote changes"
+    }
+  ],
+  "Merging & Rebasing": [
+    {
+      "command": "git merge <branch>",
+      "description": "Merge another branch into current branch"
+    },
+    {
+      "command": "git rebase <branch>",
+      "description": "Rebase current branch"
+    },
+    {
+      "command": "git merge --abort",
+      "description": "Cancel a merge in progress"
+    }
+  ],
+  "History & Inspection": [
+    {
+      "command": "git log",
+      "description": "Show commit history"
+    },
+    {
+      "command": "git log --oneline",
+      "description": "Show concise commit history"
+    },
+    {
+      "command": "git log --graph --all --oneline",
+      "description": "Show visual branch history"
+    },
+    {
+      "command": "git diff",
+      "description": "Show unstaged changes"
+    },
+    {
+      "command": "git diff --staged",
+      "description": "Show staged changes"
+    }
+  ],
+  "Undoing Changes": [
+    {
+      "command": "git restore <file>",
+      "description": "Discard changes to a file"
+    },
+    {
+      "command": "git restore --staged <file>",
+      "description": "Unstage a file"
+    },
+    {
+      "command": "git reset HEAD~1",
+      "description": "Undo last commit (keep changes)"
+    },
+    {
+      "command": "git revert <commit>",
+      "description": "Create new commit that undoes changes"
+    }
+  ],
+  "Tagging": [
+    {
+      "command": "git tag v1.0.0",
+      "description": "Create a lightweight tag"
+    },
+    {
+      "command": "git tag -a v1.0.0 -m 'Release 1.0.0'",
+      "description": "Create an annotated tag"
+    },
+    {
+      "command": "git push origin v1.0.0",
+      "description": "Push a specific tag"
+    }
+  ]
+}

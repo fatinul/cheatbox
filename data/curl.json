@@ -1,0 +1,124 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[yellow]  ██████╗██╗   ██╗██████╗ ██╗     [/yellow]",
+        "[yellow] ██╔════╝██║   ██║██╔══██╗██║     [/yellow]",
+        "[yellow] ██║     ██║   ██║██████╔╝██║     [/yellow]",
+        "[yellow] ██║     ██║   ██║██╔══██╗██║     [/yellow]",
+        "[yellow] ╚██████╗╚██████╔╝██║  ██║███████╗[/yellow]",
+        "[yellow]  ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝[/yellow]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "   ____          _ ",
+        "  / ___|   _ _ __| |",
+        " | |  | | | | '__| |",
+        " | |__| |_| | |  | |",
+        "  \\____\\__,_|_|  |_|"
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 40,
+    "outer_width": 140,
+    "primary_color": "yellow"
+  },
+  "Basic Commands": [
+    {
+      "command": "curl https://example.com",
+      "description": "Fetch a URL"
+    },
+    {
+      "command": "curl -i https://example.com",
+      "description": "Include response headers"
+    },
+    {
+      "command": "curl -I https://example.com",
+      "description": "Show headers only"
+    }
+  ],
+  "Request Methods": [
+    {
+      "command": "curl -X POST https://api.example.com/data",
+      "description": "Make a POST request"
+    },
+    {
+      "command": "curl -X PUT -d 'data' https://api.example.com",
+      "description": "Make a PUT request"
+    },
+    {
+      "command": "curl -X DELETE https://api.example.com/id",
+      "description": "Make a DELETE request"
+    }
+  ],
+  "Data & Headers": [
+    {
+      "command": "curl -d 'param1=value1&param2=value2' https://api.example.com",
+      "description": "Send form data"
+    },
+    {
+      "command": "curl -d '{\"key\":\"value\"}' -H 'Content-Type: application/json' https://api.example.com",
+      "description": "Send JSON data"
+    },
+    {
+      "command": "curl -H 'Authorization: Bearer TOKEN' https://api.example.com",
+      "description": "Add custom header"
+    }
+  ],
+  "File Operations": [
+    {
+      "command": "curl https://example.com/file.zip -o file.zip",
+      "description": "Download file with custom name"
+    },
+    {
+      "command": "curl https://example.com/file.zip -O",
+      "description": "Download with original filename"
+    },
+    {
+      "command": "curl -F 'file=@file.txt' https://api.example.com/upload",
+      "description": "Upload a file"
+    }
+  ],
+  "Authentication": [
+    {
+      "command": "curl -u username:password https://api.example.com",
+      "description": "Basic authentication"
+    },
+    {
+      "command": "curl --oauth2-bearer TOKEN https://api.example.com",
+      "description": "OAuth2 bearer token"
+    }
+  ],
+  "Verbose & Debugging": [
+    {
+      "command": "curl -v https://example.com",
+      "description": "Verbose output"
+    },
+    {
+      "command": "curl --trace - https://example.com",
+      "description": "Full trace of request/response"
+    },
+    {
+      "command": "curl -w '%{http_code}' https://example.com",
+      "description": "Show HTTP status code"
+    }
+  ],
+  "Advanced": [
+    {
+      "command": "curl -b 'cookie=value' https://example.com",
+      "description": "Send cookies"
+    },
+    {
+      "command": "curl -L https://example.com",
+      "description": "Follow redirects"
+    },
+    {
+      "command": "curl --max-time 10 https://example.com",
+      "description": "Set timeout (10 seconds)"
+    }
+  ]
+}

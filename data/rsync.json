@@ -1,0 +1,103 @@
+{
+  "LOGO": [
+    {
+      "ascii": [
+        "[cyan] ██████╗ ███████╗██╗   ██╗███╗   ██╗ ██████╗[/cyan]",
+        "[cyan] ██╔══██╗██╔════╝╚██╗ ██╔╝████╗  ██║██╔════╝[/cyan]",
+        "[cyan] ██████╔╝███████╗ ╚████╔╝ ██╔██╗ ██║██║     [/cyan]",
+        "[cyan] ██╔══██╗╚════██║  ╚██╔╝  ██║╚██╗██║██║     [/cyan]",
+        "[cyan] ██║  ██║███████║   ██║   ██║ ╚████║╚██████╗[/cyan]",
+        "[cyan] ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═══╝ ╚═════╝[/cyan]"
+      ]
+    }
+  ],
+  "TITLE": [
+    {
+      "ascii": [
+        "  ____                       ",
+        " |  _ \\ ___ _   _ _ __   ___ ",
+        " | |_) / __| | | | '_ \\ / __|",
+        " |  _ <\\__ \\ |_| | | | | (__ ",
+        " |_| \\_\\___/\\__, |_| |_|\\___|",
+        "            |___/            "
+      ]
+    }
+  ],
+  "STYLE": {
+    "command_width": 35,
+    "outer_width": 140,
+    "primary_color": "cyan"
+  },
+  "File Synchronization": [
+    {
+      "command": "rsync -av source/ destination/",
+      "description": "Sync directories (archive verbose)"
+    },
+    {
+      "command": "rsync -av --delete source/ destination/",
+      "description": "Sync and delete extra files in destination"
+    },
+    {
+      "command": "rsync -avz source/ destination/",
+      "description": "Sync with compression"
+    }
+  ],
+  "Remote Synchronization": [
+    {
+      "command": "rsync -av source/ user@host:/remote/path/",
+      "description": "Sync to remote server"
+    },
+    {
+      "command": "rsync -av user@host:/remote/path/ destination/",
+      "description": "Sync from remote server"
+    },
+    {
+      "command": "rsync -av -e ssh source/ user@host:/path/",
+      "description": "Sync over SSH"
+    }
+  ],
+  "Filtering": [
+    {
+      "command": "rsync -av --exclude='*.log' source/ destination/",
+      "description": "Exclude file pattern"
+    },
+    {
+      "command": "rsync -av --include='*.txt' --exclude='*' source/ destination/",
+      "description": "Include only specific pattern"
+    },
+    {
+      "command": "rsync -av --filter=':- .gitignore' source/ destination/",
+      "description": "Use .gitignore rules"
+    }
+  ],
+  "Performance": [
+    {
+      "command": "rsync -av --partial source/ destination/",
+      "description": "Keep partial transfers (useful for resume)"
+    },
+    {
+      "command": "rsync -avz --bwlimit=1000 source/ destination/",
+      "description": "Limit bandwidth to 1000 KB/s"
+    }
+  ],
+  "Dry Run & Testing": [
+    {
+      "command": "rsync -av --dry-run source/ destination/",
+      "description": "Preview what would be synced"
+    },
+    {
+      "command": "rsync -av --itemize-changes source/ destination/",
+      "description": "Show detailed changes"
+    }
+  ],
+  "Advanced": [
+    {
+      "command": "rsync -av --backup --backup-dir=./backups source/ destination/",
+      "description": "Create backups before overwriting"
+    },
+    {
+      "command": "rsync -av --checksum source/ destination/",
+      "description": "Check with checksum instead of timestamp"
+    }
+  ]
+}
