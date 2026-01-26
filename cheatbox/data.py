@@ -5,7 +5,8 @@ import os
 
 class Data:
     def __init__(self):
-        self.base_dir = Path(__file__).parent.parent
+        # Keep data files alongside the package so installs include them
+        self.base_dir = Path(__file__).parent
         self.data_dir = self.base_dir / "data"
         self.domain: str = self.select_domain()
 

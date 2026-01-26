@@ -153,6 +153,42 @@ uv run cheatbox
 
 `cheatbox` is inspired by the common cheatsheet posts in the Linkedin feed and also [BENTOBOX](https://www.google.com/search?q=bento).
 
+## Running the Application Globally
+
+Install once, then run `cheatbox` from any directory.
+
+**Install**
+
+- pipx (recommended):
+  ```bash
+  pipx install cheatbox
+  ```
+- From a cloned repo:
+  ```bash
+  uv tool install .
+  ```
+
+**Set PATH**
+
+- Windows (PowerShell): ensure `C:\Users\<you>\.local\bin` is on PATH. One-time helper:
+  ```powershell
+  uv tool update-shell
+  ```
+  Current session only:
+  ```powershell
+  $env:PATH = "C:\Users\<you>\.local\bin;$env:PATH"
+  ```
+- Linux/macOS (bash/zsh): ensure `~/.local/bin` is on PATH:
+  ```bash
+  export PATH="$HOME/.local/bin:$PATH"
+  ```
+
+**Run**
+
+```bash
+cheatbox
+```
+
 ## License
 
 GPL-3.0
