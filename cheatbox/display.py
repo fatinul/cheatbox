@@ -64,8 +64,8 @@ class Display:
 
         logo_panel = self.get_ascii_panel(json_data, "LOGO")
         title_panel = self.get_ascii_panel(json_data, "TITLE")
-
-        title_panel.subtitle = "CheatBox "
+        if title_panel:
+            title_panel.subtitle = "CheatBox "
 
         # Display the Logo and title
         if logo_panel or title_panel:

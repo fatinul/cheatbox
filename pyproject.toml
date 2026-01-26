@@ -36,6 +36,9 @@ cheatbox = "cheatbox.main:app"
 [tool.uv]
 package = true
 
+[tool.hatch.build]
+include = ["cheatbox", "images/*", "README.md", "CHEATSHEET.md"]
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
